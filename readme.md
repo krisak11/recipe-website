@@ -91,3 +91,4 @@ Upprunaleg hönnun eftir [Meghan Regior](https://twitter.com/meghanregior) fyrir
 
 > Útgáfa 0.2 (bæta við um git og PR)
 # hopverkefni1
+#ég heyti andriii
