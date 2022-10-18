@@ -90,3 +90,4 @@ Sett verða fyrir tvö hópverkefni þar sem hvort um sig gildir 10%, samtals 20
 Upprunaleg hönnun eftir [Meghan Regior](https://twitter.com/meghanregior) fyrir verkefni í vefforritun 2016. Flutt í Figma og uppfært af Óla.
 
 > Útgáfa 0.2 (bæta við um git og PR)
+# hopverkefni1
