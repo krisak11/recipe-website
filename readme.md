@@ -1,3 +1,51 @@
+# Hvernig skal keyra forrit:
+# Hvernig skall collaborate-a frá grunni:
+1. Búa til möppu í tölvunni sinni, t.d. test2022 (þar sem maður vill geyma forritið).
+2. Opna code editor (Vscode, intelliJ, ...)
+3. Opnum möppuna í code editornum, t.d. test2022 (open folder) - væri líka hægt að gera new file, eða new folder. 
+4. Erum í vscode staðsett í möppunni sem við opnuðum, t.d. test2022 (hægt að tékka með því að fara í valmynd í vscode og velja terminal - opna terminal í vscode, skrifa skipunina: pwd (print working directory) til að tékka hvort maður sé staðsettur í möppunni, skipunin ls (í mac) eða dir (í windows) sýnir hvað er í möppunni).
+  Ef pwd sýnir að maður sé á röngum stað, nota cd skipunina til að fara á réttan stað.
+5. Búum til Github Repository á www.github.com
+        1. Repositories -> Create new Repository
+        2. velja nafn, t.d. test2022
+        3. velja private eða public eftir hentisemi. 
+        4. samþykkja
+6. Github birtir nú leiðbeiningarsíðu fyrir hvernig skal tengja verkefnið í code editornum (t.d. vscode) við þetta github repository
+## ATHUGA: Þessar leiðbeiningar fyrir neðan er bara fyrir þetta ákveðna dæmi, ekki fylgja þessum skrefum, heldur þeim skrefum sem þið fáið á github fyrir ykkar repository. 
+## …or create a new repository on the command line -- fylgjum þessum leiðbeiningum í þessu dæmi
+echo "# test2022" >> README.md
+git init
+git add README.md
+(hægt að nota <git add .> skipunina til þess að adda öllum skrám í project-möppunni til þess að geta committað og svo pushað þeim. Þetta kallast staging)
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/krisak11/test2022.git
+git push -u origin main
+
+## …or push an existing repository from the command line
+git remote add origin https://github.com/krisak11/test2022.git
+git branch -M main
+git push -u origin main
+
+## athuga ef skal clone-a project frá öðrum þá er hægt að velja það í byrjun í stað þess að opna nýtt folder/file í code-editornum. Leiðbeiningar fylgja þar.
+
+7. Bý nú til skrár í code editornum fyrir forritið mitt, höfum núþegar búið til README.md skrá með skipuninni að ofan sem við getum skrifað inn upplýsingar um hvernig skal keyra forrit og fleira.
+8. Forritum í viðeigandi skrár (t.d. HelloWorld.java skráin er með helloworld forritskóðann ), vistum þær skrár sem við skrifum/breytum (hægt með save all, eða bara save fyrir einstaka skrá).
+9. Erum tilbúin að senda þetta frá okkur á github. Opnum terminal í vscode og keyrum eftirandi skipanir:
+        git add .
+        git commit -m "lýsandi útskýring á því sem var breytt"
+        git push (líka hægt að skrifa: <git push origin main> eða <git push origin branchname> til að pusha á ákveðið branch.
+
+https://gist.github.com/Alinaprotsyuk/3d58f8cd52eb03a11283d64beb0e083e#setting-up-your-branches
+
+# Nytsamlegar git skipanir
+
+git branch : nafnið á branchinu sem þú ert á.
+git branch -v: branchið sem maður er á og committin á henni.
+git branch -vv : athugar hvaða tracking branch eru til á repo, og hvaða branch þú ert að tracka (* við hlið branchins)
+
+git show remote origin : þetta skilar helling, upplýsingar um hvaða repository maður er að vinna á (t.d. github.com/krisak11/hopverkefni1) ... og fleira.
+
 # Vefforritun 1, 2022, hópverkefni 1
 
 [Kynning í fyrirlestri](https://youtu.be/AMb-bmaRlU0).
