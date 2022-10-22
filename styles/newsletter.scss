@@ -2,20 +2,19 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    // position: absolute;
-    width: 1600px;
+    width: var(--max-width);
     height: 339px;
     left: calc(50% - 1600px/2);
     bottom: 336px;
 
-    background-color: black;
+    background-color: var(--color-heading);
 
     h1 {
-        color: var(--newsletter-color-primary);
+        color: var(--newsletter-color);
     }
 
     p, .newsletter-button {
-        color: var(--newsletter-color-secondary);
+        color: var(--warm-color);
     }
     label {
         display: block;

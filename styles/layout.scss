@@ -5,6 +5,7 @@ wrapper {
     grid-template-rows: auto;
     max-width: var(--max-width);
     width: calc(100% - (2 * var(--offset)));
+    height: 100vh;
 }
 
 main {
