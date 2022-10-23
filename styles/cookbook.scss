@@ -1,23 +1,32 @@
-#hero-section {
-  background-image: url("myndir/cake.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  width: 889.76px;
-  background-color: #fafafa;
-  height: 100vh;
-
+#cookbook {
   display: flex;
+
+  background-image: linear-gradient(0deg,  #FFFFFF 140px, #f7f1eb 140px);
+  height: 800px;
+  max-width: 16000px;
   width: 100%;
-  max-width: var(--max-width);
 }
 
-.hero_text {
+img {
+  margin-top: 140px;
+  margin-right: 265;
+  height: 607.6182861328125px;
+  width: 440px;
+
+
+  box-shadow: -30px 18px 1px rgba(0,0,0,0.02);
+  -moz-box-shadow:-30px 18px 1px rgba(0,0,0,0.02);
+  -webkit-box-shadow: -30px 18px 1px rgba(0,0,0,0.02);
+  -khtml-box-shadow: -30px 18px 1px rgba(0,0,0,0.02);
+  
+}
+
+.cookbook_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 550px;
-  margin-left: 157px;
-  margin-bottom: 232px;
+  width: 579px;
+  margin-left: 266px;
+  margin-right: 100px;
 }
 
 p {
@@ -26,13 +35,13 @@ p {
   display: flex;
 }
 
-.hero_text {
+.cookbook_text {
   #tiny_headertext {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #e3cdb1;
-    margin-top: 147px;
+    margin-top: 182px;
   }
 
   #paragraph {
@@ -43,6 +52,7 @@ p {
     /* or 178% */
     margin: 0;
     color: #5e5b69;
+    margin-right: 100px;
   }
 }
 
@@ -54,14 +64,5 @@ h2 {
   line-height: 80px;
   margin: 0;
   margin-top: 0;
-  /* identical to box height */
   color: #000000;
-}
-
-button {
-  background: #fafafa;
-  text-decoration: none;
-  border: 1px solid #e3cdb1;
-  text-align: center;
-  text-decoration-color: #e3cdb1;
 }
