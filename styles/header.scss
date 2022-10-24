@@ -1,51 +1,85 @@
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar */
 /* https://www.youtube.com/watch?v=x_VYl7zz1XY */
-
-.mobile_button {
-    margin-left: 10px;
-    float: right;
-    span {
-        height: 3px;
-        width: 30px;
-        background: black;
+@media (max-width: 600px) {
+    header {
+        width: 100vw;
+        height: 60px;
+        background-color: aliceblue;
         display: block;
-        margin-bottom: 5px;
-        position:relative;
-        transition: 0.3s ease-in-out;
-        .header_trigger:checked ~ &:first-child {
-            transform: rotate(45deg);
-            top: 8px;
+        position: fixed;
+
+        h1 {
+            position: fixed;
+            top: 2px;
+            float: left;
+            left: 30px;
         }
-        .header_trigger:checked ~ &:last-child {
-            transform: rotate(-45deg);
-            top: -8px;
+    }
+
+    .mobile_button {
+        margin-right: 30px;
+        margin-top: 17px;
+        float: right;
+        span {
+            height: 3px;
+            width: 30px;
+            background: black;
+            display: block;
+            margin-bottom: 5px;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            .header_trigger:checked ~ &:first-child {
+                transform: rotate(45deg);
+                top: 8px;
+            }
+            .header_trigger:checked ~ &:last-child {
+                transform: rotate(-45deg);
+                top: -8px;
+            }
+            .header_trigger:checked ~ &:nth-child(2) {
+                opacity: 0;
+            }
         }
-        .header_trigger:checked ~ &:nth-child(2) {
-            opacity: 0;
+    }
+    .header_trigger:checked ~ nav {
+        right: 0;
+        transition: right 0.3s ease-in-out;
+    }
+    .header_trigger {
+        display: none;
+    }
+
+    nav {
+        background: #fafafa;
+        width: 100vw;
+        padding: 20px 70px;
+        margin-top: 60px;
+        position: absolute;
+        right: -1000px;
+        box-sizing: border-box;
+        transition: right 0.3s ease-in-out;
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            align-items: center;
+
+            li {
+                font-size: 60px;
+                padding: 30px 250px;
+                border-width: 1px;
+                border-color: black;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
         }
     }
 }
-.header_trigger:checked ~ nav {
-    left: 0;
-    transition: left 0.3s ease-in-out;
-}
-.header_trigger{
+
+.header_trigger {
     display: none;
-}
-
-nav {
-    background: #fafafa;
-    width: 100vw;
-    padding: 30px 70px;
-    margin-top: 10px;
-    position: absolute;
-    left: -100vw;
-    box-sizing: border-box;
-    transition: left 0.3s ease-in-out;
-    ul {
-        list-style-type: none;
-
-        li {
-        }
-    }
+    opacity: 0;
 }
