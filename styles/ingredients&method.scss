@@ -1,0 +1,70 @@
+.i_m {
+  h2 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #d0d0d0;
+    margin-bottom: 40px;
+  }
+  margin-bottom: 180px;
+}
+
+.ingredients {
+  .ingredients_name {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  .ingredients_list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+    .list_tolur {
+      display: flex;
+      flex-direction: column;
+      color: #e3cdb1;
+      margin-right: 50px;
+      p {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 18px;
+      }
+    }
+
+    .list_ord {
+      display: flex;
+      flex-direction: column;
+      /* or 94% */
+      p {
+        margin-bottom: 20px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 17px;
+        color: #9b9b9b;
+      }
+    }
+  }
+}
+
+.method {
+  p {
+    margin-bottom: 1rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5e5b69;
+  }
+}
