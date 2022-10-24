@@ -1,11 +1,8 @@
 footer {
-  background-color: 
-  #FFFFFF;
-  height: 100%;
-}
-
-.footer-icons {
-  align-items: center;
+  background-color: #ffffff;
+  height: 261px;
+  display: flex;
+  flex-direction: column;
 }
 
 #footer_texti {
@@ -20,8 +17,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: #000000;
-
-  margin-top: 103px;
+  padding-top: 103px;
 }
 
 #footer_logo {
@@ -38,4 +34,26 @@ footer {
   justify-content: center;
 
   color: #d0d0d0;
+
+  padding-bottom: 30px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  margin: 10px;
+  border: 1px solid #e3cdb1;
+  border-radius: 100%;
+
+  .img {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    padding: 11px;
+  }
 }
