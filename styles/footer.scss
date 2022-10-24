@@ -1,0 +1,41 @@
+footer {
+  background-color: 
+  #FFFFFF;
+  height: 100%;
+}
+
+.footer-icons {
+  align-items: center;
+}
+
+#footer_texti {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height, or 94% */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+
+  margin-top: 103px;
+}
+
+#footer_logo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.291667px;
+  justify-content: center;
+
+  color: #d0d0d0;
+}
