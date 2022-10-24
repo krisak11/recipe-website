@@ -1,28 +1,9 @@
 #cookbook {
   display: flex;
   width: 100%;
-
-  @media only screen and (max-width: 599px) {
-    flex-direction: column;
-    height: 512px;
-    background-image: linear-gradient(0deg, #ffffff 140px, #f7f1eb 140px);
-  }
-
-  @media only screen and (min-width: 600px) {
-    height: 584px;
-    background-image: linear-gradient(0deg, #ffffff 100px, #f7f1eb 100px);
-  }
-
-  @media only screen and (min-width: 1000px) {
-    height: 656px;
-    background-image: linear-gradient(0deg, #ffffff 100px, #f7f1eb 100px);
-  }
-
-  @media only screen and (min-width:1300px){
-    height: 800px;
-    max-width: 1600px;
-    background-image: linear-gradient(0deg, #ffffff 140px, #f7f1eb 140px);
-  }
+  height: 100%;
+  background-image: linear-gradient(0deg, #ffffff 10%, #f7f1eb 10%);
+  max-width: 1600px;
 }
 
 img {
@@ -46,7 +27,7 @@ img {
     -khtml-box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
   }
 
-  @media only screen and (min-width:1000px){
+  @media only screen and (min-width: 1000px) {
     margin-top: 8%;
     margin-right: 13%;
     height: 528.5px;
@@ -57,7 +38,7 @@ img {
     -khtml-box-shadow: -30px 18px 1px rgba(0, 0, 0, 0.02);
   }
 
-  @media only screen and (min-width: 1300px){
+  @media only screen and (min-width: 1300px) {
     margin-top: 8%;
     margin-right: 13%;
     height: 607.6182861328125px;
@@ -82,17 +63,17 @@ img {
     width: 320px;
     margin-left: 16%;
     margin-right: 5%;
-    margin-top:8%;
+    margin-top: 8%;
   }
 
-  @media only screen and (min-width:1000px){
+  @media only screen and (min-width: 1000px) {
     width: 579px;
     margin-left: 16%;
     margin-right: 5%;
     margin-top: 11%;
   }
 
-  @media only screen and (min-width:1300px){
+  @media only screen and (min-width: 1300px) {
     width: 579px;
     margin-left: 16%;
     margin-right: 5%;
@@ -107,11 +88,11 @@ p {
   color: #5e5b69;
 }
 
-#paragraph{
+#paragraph {
   margin-bottom: 4.5%;
 }
 
-#tiny_headertext{
+#tiny_headertext {
   color: #e3cdb1;
 }
 
@@ -155,7 +136,7 @@ p {
     }
   }
 
-  @media only screen and (min-width:1000px){
+  @media only screen and (min-width: 1000px) {
     #tiny_headertext {
       font-weight: 500;
       font-size: 16px;
@@ -175,7 +156,7 @@ p {
     }
   }
 
-  @media only screen and (min-width:1300px){
+  @media only screen and (min-width: 1300px) {
     #tiny_headertext {
       font-weight: 500;
       font-size: 16px;
