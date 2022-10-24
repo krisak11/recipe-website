@@ -1,3 +1,23 @@
 .newsletter {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: var(--max-width);
+    height: 339px;
+    left: calc(50% - 1600px/2);
+    bottom: 336px;
+
+    background-color: var(--color-heading);
+
+    h1 {
+        color: var(--newsletter-color);
+    }
+
+    p, .newsletter-button {
+        color: var(--warm-color);
+    }
+    label {
+        display: block;
+    }
+
 }
