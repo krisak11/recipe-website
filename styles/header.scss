@@ -1,5 +1,7 @@
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar */
 /* https://www.youtube.com/watch?v=x_VYl7zz1XY */
+
+/*mobile*/
 @media (max-width: 600px) {
     header {
         width: 100vw;
@@ -7,16 +9,17 @@
         background-color: aliceblue;
         display: block;
         position: fixed;
+        top: 0px;
 
         h1 {
             position: fixed;
-            top: 2px;
             float: left;
             left: 30px;
         }
     }
 
     .mobile_button {
+        grid-column-end: 13;
         margin-right: 30px;
         margin-top: 17px;
         float: right;
@@ -64,9 +67,12 @@
             list-style-type: none;
             align-items: center;
 
+            :first-child {
+                opacity: 1;
+            }
+
             li {
                 font-size: 60px;
-                padding: 30px 250px;
                 border-width: 1px;
                 border-color: black;
 
@@ -79,7 +85,43 @@
     }
 }
 
-.header_trigger {
-    display: none;
-    opacity: 0;
+/*Desktop*/
+@media (min-width: 600px) {
+    .header_trigger {
+        display: none;
+        opacity: 0;
+    }
+    header {
+        display: grid;
+        max-width: var(--max-width);
+        margin: var(--vertical-space) auto;
+
+        label {
+            display: grid;
+            max-width: var(--max-width);
+            grid-template-columns: repeat(var(--columns), 1fr);
+            gap: var(--gutter);
+            grid-template-rows: auto;
+            h1 {
+                display: grid;
+                grid-column: 1 / span 2;
+            }
+            nav {
+                display: grid;
+                grid-column-end: 13;
+                ul {
+                    display: flex;
+                    > :first-child {
+                        display: none;
+                        opacity: 0;
+                    }
+                    li {
+                        flex-direction: column;
+                        margin-left: var(--gutter);
+                        margin-right: var(--gutter);
+                    }
+                }
+            }
+        }
+    }
 }
