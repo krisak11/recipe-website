@@ -8,14 +8,62 @@
 
 @font-face {
   font-display: swap;
-  font-family: "Poppins";
+  font-family: "PoppinsL";
   font-style: normal;
   src: url("./fonts/Poppins/Poppins-Light.ttf") format("woff");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Poppins";
+  font-family: "PoppinsM";
   font-style: normal;
   src: url("./fonts/Poppins/Poppins-Medium.ttf") format("woff");
+}
+
+
+/*Font fyrir ingredients og method*/
+
+.i_m{
+  h2{
+    color: #d0d0d0;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    line-height: 53px;
+  }
+}
+
+.ingredients {
+  .ingredients_name {
+    color: #000000;
+    font-family: "PoppinsM";
+    font-size: 18px;
+    line-height: 17px;
+  }
+
+  .list_tolur {
+    p {
+      color: #e3cdb1;
+      font-family: "Playfair Display";
+      font-size: 36px;
+      line-height: 18px;
+    }
+  }
+
+  .list_ord {
+   p{
+    color: #9b9b9b;
+    font-family: "PoppinsL";
+    font-size: 18px;
+    line-height: 17px;
+   }
+  }
+}
+
+.method {
+  p {
+    color: #5e5b69;
+    font-family: "PoppinsL";
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
