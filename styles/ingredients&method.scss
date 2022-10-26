@@ -1,4 +1,7 @@
 .i_m {
+  margin: 0 auto;
+  margin-bottom: 180px;
+  display: flex;
   h2 {
     font-family: "Playfair Display";
     font-style: normal;
@@ -8,10 +11,16 @@
     color: #d0d0d0;
     margin-bottom: 40px;
   }
-  margin-bottom: 180px;
+
+  @media only screen and (max-width: 700px){
+    flex-direction: column;
+  }
+
 }
 
 .ingredients {
+  width: 100%;
+
   .ingredients_name {
     font-family: "Poppins";
     font-style: normal;
@@ -38,6 +47,7 @@
         font-size: 36px;
         line-height: 18px;
       }
+
     }
 
     .list_ord {
@@ -56,9 +66,10 @@
     }
   }
 }
-
 .method {
+  
   p {
+    word-wrap: break-word;
     margin-bottom: 1rem;
     font-family: "Poppins";
     font-style: normal;
@@ -66,5 +77,13 @@
     font-size: 18px;
     line-height: 32px;
     color: #5e5b69;
+
+    .not_in_mobile{
+      @media only screen and (max-width: 700px){
+        display: none;
+      }
+    }
   }
 }
+
+
