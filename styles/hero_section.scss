@@ -8,12 +8,16 @@
   display: flex;
   width: 100%;
   max-width: var(--max-width);
+  margin: 0 auto;
+
+  @media only screen and (max-width: 500px){
+    height: 560px;
+  }
 }
 
 .hero_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   p {
     font-family: "Poppins";
@@ -21,31 +25,34 @@
     display: flex;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 320px) {
+    margin: 0 auto;
     margin-top: 71.66px;
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 321px) {
     width: 550px;
     margin-left: 10%;
     margin-bottom: 232px;
     margin-top: 147px;
+    justify-content: center;
   }
 
   #our_latest_recipe {
     font-weight: 500;
     color: #e3cdb1;
 
-    @media only screen and (max-width: 599px) {
+    @media only screen and (max-width: 320px) {
       font-weight: 500;
       font-size: 12px;
       line-height: 18px;
-      text-align: center;
+      margin: 0 auto;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 321px) {
       font-size: 16px;
       line-height: 24px;
+      margin: 0;
     }
   }
 
@@ -55,27 +62,27 @@
     font-weight: 700;
     color: #000000;
 
-    @media only screen and (max-width: 599px) {
+    @media only screen and (max-width: 320px) {
       font-size: 32px;
       line-height: 43px;
-      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 17px;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 321px) {
       font-size: 60px;
       line-height: 80px;
       margin: 0;
-      margin-top: 0;
       /* identical to box height */
     }
   }
 
   #pumkin_texti {
-    @media only screen and (max-width: 599px) {
+    @media only screen and (max-width: 320px) {
       display: none;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 321px) {
       font-weight: 300;
       font-size: 18px;
       height: 128px;
@@ -85,8 +92,4 @@
       color: #5e5b69;
     }
   }
-}
-
-button:hover{
-  background-image:#e3cdb1 ;
 }
