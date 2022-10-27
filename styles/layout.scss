@@ -22,30 +22,40 @@ main {
     display: flex;
     flex-direction: row;
 
-    .ingredients{
+    @media only screen and (max-width: 830px){
+      flex-direction: column;
+    }
 
-      @media only screen and (max-width: 700px){
+    .ingredients{
+      @media only screen and (max-width: 831px){
         margin: 0 auto;
         margin-left: 25px;
         margin-right: 25px;
       }
     
-      @media only screen and (min-width: 701px) {
+      @media only screen and (min-width: 830px) {
+        margin-top: 90px;
+        margin-right: 9%;
+        margin-left: 9%; 
+      }
+
+      @media only screen and (min-width: 1100px) {
+        margin: 0;
         margin-left: 150px;
         margin-top: 90px;
       }
     }
 
     .method{
-        @media only screen and (max-width: 700px){
+        @media only screen and (max-width: 830px){
           margin: 0 auto;
           margin-left: 25px;
           margin-right: 25px;
         }
       
-        @media only screen and (min-width: 701px) {
+        @media only screen and (min-width: 831px) {
           margin-top: 90px;
-          margin-right: 155px;
+          margin-right: 9%;
 
         }
       

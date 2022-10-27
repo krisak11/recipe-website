@@ -1,13 +1,18 @@
 .i_m {
-  display: flex;
   margin: 0 auto;
   margin-bottom: 180px;
-  h2 {
-    margin-bottom: 40px;
+  height: 100%;
+
+  @media only screen and (max-width: 320px){
+    margin-bottom: 0px;
   }
 
-  @media only screen and (max-width: 700px){
-    flex-direction: column;
+  h2{
+    color: #d0d0d0;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    line-height: 53px;
+    margin-bottom: 40px;
   }
 
 }
@@ -48,21 +53,12 @@
   p {
     margin-bottom: 1rem;
     word-wrap: break-word;
-
-    .not_in_mobile{
-      @media only screen and (max-width: 320px){
-        display: none;
-      }
-    }
   }
 }
 
-.i_m{
-  h2{
-    color: #d0d0d0;
-    font-family: "Playfair Display";
-    font-size: 40px;
-    line-height: 53px;
+.not_in_mobile{
+  @media only screen and (max-width: 500px){
+    display: none;
   }
 }
 
