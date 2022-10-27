@@ -1,24 +1,59 @@
 .newsletter {
+  align-items: center;
+  background-color: var(--color-heading);
+  display: flex;
+  height: calc(calc(339/20) * var(--offset));
+  margin: auto;
+  width: var(--max-width);
+
+  .newsletter-content {
+    align-items: flex-end;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: var(--max-width);
-    height: 339px;
-    left: calc(50% - 1600px/2);
-    bottom: 336px;
-    margin: auto;
+    width: 100%;
+  }
 
+  h1 {
+    color: var(--newsletter-color);
+    font-size: calc(1rem * calc(40/16));
+  }
+
+  p,
+  .newsletter-button {
+    color: var(--warm-color);
+    font-size: 1rem;
+  }
+
+  label {
+    color: var(--newsletter-color);
+    display: block;
+    font-size: calc(calc(14/16) * 1rem);
+  }
+
+  input {
     background-color: var(--color-heading);
+    border: 0;
+    font-size: calc(calc(22/16) * 1rem);
+    line-height: calc(calc(29/16) * 1rem);
+  }
 
-    h1 {
-        color: var(--newsletter-color);
-    }
+  input::placeholder {
+    color: var(--newsletter-color);
+    opacity: 1;
+  }
 
-    p, .newsletter-button {
-        color: var(--warm-color);
-    }
-    label {
-        display: block;
-    }
+  .netfang-rammi {
+    border-bottom: 1px solid var(--warm-color);
+    height: calc(calc(65/16) * 1rem);
+    width: calc(calc(301/16) * 1rem);
+  }
 
+  .newsletter-button {
+    align-items: center;
+    border: 1px solid var(--warm-color);
+    display: flex;
+    height: calc(calc(52/16) * 1rem);
+    justify-content: center;
+    width: calc(calc(250/16) * 1rem);
+  }
 }

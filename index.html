@@ -1,124 +1,135 @@
 <!DOCTYPE html>
 <html lang="is">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Hópverkefni 1 - yum&yum</title>
     <link
       rel="icon"
       href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>&lt;text y=%22.9em%22 font-size=%2290%22>⭐️&lt;/text>&lt;/svg>"
     />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header for="header_trigger">
-        <label>
-            <input type="checkbox" class="header-trigger" id="header_trigger" />
-            <img class="header-logo" src="img/Logotype.jpg" />
-            <h1>yum&yum</h1>
-            <div class="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <div class="nav-divider"></div>
-                    <li><a href="pages/latest_recipes.html">Recipes</a></li>
-                    <div class="nav-divider"></div>
-                    <li><a href="pages/videos">Videos</a></li>
-                    <div class="nav-divider"></div>
-                    <li><a href="">About</a></li>
-                </ul>
-            </nav>
-        </label>
+      <label>
+        <input type="checkbox" class="header-trigger" id="header_trigger" />
+        <img class="header-logo" src="img/Logotype.jpg" />
+        <h1>yum&yum</h1>
+        <div class="mobile-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="pages/latest_recipes.html">Recipes</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="pages/videos">Videos</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+      </label>
     </header>
     <main>
-        <section id="hero-section">
-            <section class="hero_text">
-                <p id="our_latest_recipe">Our latest recipe</p>
-                <h2>Pumpkin pie</h2>
-                <p id="pumkin_texti">
-                    Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
-                    custard filling. The pumpkin is a symbol of harvest time, and
-                    pumpkin pie is often eaten during the fall and early winter.
-                </p>
-                <button id="index_button">
-                    <a href="recipe.html">See more</a>
-                </button>
-            </section>
-            <!--  <img id="cake" src="myndir/cake.png" />-->
+      <section id="hero-section">
+        <section class="hero_text">
+          <p id="our_latest_recipe">Our latest recipe</p>
+          <h2>Pumpkin pie</h2>
+          <p id="pumkin_texti">
+            Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
+            custard filling. The pumpkin is a symbol of harvest time, and
+            pumpkin pie is often eaten during the fall and early winter.
+          </p>
+          <button id="index_button">
+            <a href="recipe.html">See more</a>
+          </button>
         </section>
-        <section id="latest-recipes-section">
-            <p>Get ready to get busy</p>
-            <h2>Check out our latest recipes</h2>
-            <div class="card">
-                <p>September</p>
-                <h3>Lax sushi rolls</h3>
-                <p><a class="card-button">Read more</a></p>
-                <img src="myndir/Bitmap.png" />
-            </div>
-            <!--copy paste 6 sinnum-->
-            <p><a class="button">See more</a></p>
-        </section>
+        <!--  <img id="cake" src="myndir/cake.png" />-->
+      </section>
+      <section id="latest-recipes-section">
+        <p>Get ready to get busy</p>
+        <h2>Check out our latest recipes</h2>
+        <div class="card">
+          <p>September</p>
+          <h3>Lax sushi rolls</h3>
+          <p><a class="card-button">Read more</a></p>
+          <img src="myndir/Bitmap.png" />
+        </div>
+        <!--copy paste 6 sinnum-->
+        <p><a class="button">See more</a></p>
+      </section>
 
+      <section id="cookbook">
+        <p>Announcement time</p>
+        <p id="Book-ad">Our book is out</p>
+        <p>
+          Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
+          custard filling. The pumpkin is a symbol of harvest time, and pumpkin
+          pie is often eaten during the fall and early winter.
+        </p>
+        <p><a class="button">See more</a></p>
+        <img src="myndir/matarbok.png" />
+      </section>
 
-        <section id="cookbook">
-            <p>Announcement time</p>
-            <p id="Book-ad">Our book is out</p>
-            <p>
-                Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
-                custard filling. The pumpkin is a symbol of harvest time, and
-                pumpkin pie is often eaten during the fall and early winter.
-            </p>
-            <p><a class="button">See more</a></p>
-            <img src="myndir/matarbok.png" />
-        </section>
-       
-        <section id="video-section">
-            <p>Want some action?</p>
-            <h2>Check out our video recipes</h2>
-            <div class="video-card">
-                <p>August 2016</p>
-                <p>Legumes printaniers</p>
-                <img src="myndir/Salat.png" />
-            </div>
-            <div class="video-card">
-                <p>August 2016</p>
-                <p>Blossoming cookie</p>
-                <img src="Myndir/Bollur.png" />
-            </div>
-            <div class="video-card">
-                <p>August 2016</p>
-                <p>Blueberry pie</p>
-                <img src="myndir/Skeljar.png" />
-            </div>
-        </section>
+      <section id="video-section">
+        <p>Want some action?</p>
+        <h2>Check out our video recipes</h2>
+        <div class="video-card">
+          <p>August 2016</p>
+          <p>Legumes printaniers</p>
+          <img src="myndir/Salat.png" />
+        </div>
+        <div class="video-card">
+          <p>August 2016</p>
+          <p>Blossoming cookie</p>
+          <img src="Myndir/Bollur.png" />
+        </div>
+        <div class="video-card">
+          <p>August 2016</p>
+          <p>Blueberry pie</p>
+          <img src="myndir/Skeljar.png" />
+        </div>
+      </section>
     </main>
     <section class="newsletter">
+      <div class="newsletter-content">
         <div>
-            <p>Craving more</p>
-            <h1>Subscribe to our newsletter</h1>
+          <p>Craving more</p>
+          <h1>Subscribe to our newsletter</h1>
         </div>
-        <div>
-            <label for="netfang">Email</label>
-            <input type="email" name="netfang" id="netfang" placeholder="email@example.com" />
+        <div class="netfang-rammi">
+          <label for="netfang">Email</label>
+          <input
+            type="email"
+            name="netfang"
+            id="netfang"
+            placeholder="email@example.com"
+          />
         </div>
-        <div class="newsletter-button">Subscribe now</div>
-      </section>
+        <div class="newsletter-button"><p>Subscribe now</p></div>
+      </div>
+    </section>
 
     <footer>
       <p id="footer_texti">Come and join us for more recipes</p>
       <section class="footer-icons">
-        <div class="icon"><img class="img"  src="myndir/Facebook.png" /></div>
-        <div class="icon"><img class="img"  src="myndir/Twitter.png" /></div>
-        <div class="icon"><img class="img" src="myndir/Youtube.png"/></div>
-        <div class="iconmobile"><img class="img"  src="myndir/Facebook_mobile.png" /></div>
-        <div class="iconmobile"><img class="img"  src="myndir/Twitter_mobile.png" /></div>
-        <div class="iconmobile"><img class="img" src="myndir/Youtube_mobile.png"/></div>
+        <div class="icon"><img class="img" src="myndir/Facebook.png" /></div>
+        <div class="icon"><img class="img" src="myndir/Twitter.png" /></div>
+        <div class="icon"><img class="img" src="myndir/Youtube.png" /></div>
+        <div class="iconmobile">
+          <img class="img" src="myndir/Facebook_mobile.png" />
+        </div>
+        <div class="iconmobile">
+          <img class="img" src="myndir/Twitter_mobile.png" />
+        </div>
+        <div class="iconmobile">
+          <img class="img" src="myndir/Youtube_mobile.png" />
+        </div>
       </section>
       <p id="footer_logo">yamyam.com</p>
     </footer>
