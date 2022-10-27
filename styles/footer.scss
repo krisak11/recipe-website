@@ -1,30 +1,44 @@
 footer {
   background-color: #ffffff;
-  height: 261px;
   display: flex;
   flex-direction: column;
   margin: auto;
+
+  @media only screen and (max-width: 700px){
+    height: 510px;
+  }
+
+  @media only screen and (min-width: 701px){
+    height: 329px;
+  }
 }
 
 #footer_texti {
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 17px;
-  /* identical to box height, or 94% */
+
+  @media only screen and (max-width: 700px){
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  @media only screen and (min-width: 701px){
+    font-size: 18px;
+    line-height: 17px;
+    padding-top: 103px;
+  }
 
   display: flex;
   align-items: center;
   justify-content: center;
   color: #000000;
-  padding-top: 103px;
 }
 
 #footer_logo {
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
   font-size: 14px;
   line-height: 21px;
   /* identical to box height */
@@ -49,12 +63,29 @@ footer {
     margin: 10px;
     border: 1px solid #e3cdb1;
     border-radius: 100%;
-  
-    .img {
-      margin: auto;
-      padding: 11px;
+
+    @media only screen and (max-width: 320px){
+      display: none;
     }
+
+  }
+
+  .iconmobile{
+    display: flex;
+    margin: 10px;
+    border: 1px solid #D0D0D0;
+    border-radius: 100%;
+
+    @media only screen and (min-width: 321px){
+      display: none;
+      border: 0;
+    }
+  
+  }
+
+  .img {
+    margin: auto;
+    padding: 11px;
   }
   
 }
-
