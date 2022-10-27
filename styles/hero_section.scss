@@ -1,0 +1,53 @@
+#hero-section {
+  background-image: url("myndir/cake.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  //width: 889.76px;
+  background-color: var(--background-offwhite);
+  height: 100%;
+
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 550px;
+  margin-left: 157px;
+  margin-bottom: 232px;
+}
+
+.hero_text {
+  #our_latest_recipe {
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--warm-color);
+    margin-top: 147px;
+  }
+
+  #pumkin_texti {
+    font-weight: 300;
+    font-size: 18px;
+    height: 128px;
+    line-height: 32px;
+    /* or 178% */
+    margin: 0;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 80px;
+  /* identical to box height */
+}
+
+button {
+  background: var(--background-offwhite);
+  text-decoration: none;
+  border: 1px solid var(--warm-color);
+  text-align: center;
+  text-decoration-color: var(--warm-color);
+}

@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html lang="is">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Hópverkefni 1 - yum&yum</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>&lt;text y=%22.9em%22 font-size=%2290%22>⭐️&lt;/text>&lt;/svg>"
+    />
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
-    <header>
+  <body>
+    <div class="wrapper">
+      <header>
         <h1>yum&yum</h1>
         <ul>
-            <li>Recipes</li>
-            <li>Videos</li>
-            <li>About us</li>
+          <li>Recipes</li>
+          <li>Videos</li>
+          <li>About us</li>
         </ul>
-    </header>
-    <main>
+      </header>
+      <main>
         <section id="hero-section">
-            <p>Our latest recipe</p>
+          <section class="hero_text">
+            <p id="our_latest_recipe">Our latest recipe</p>
             <h2>Pumpkin pie</h2>
-            <p>Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol
-                of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
-            <p><a class="button">See more</a></p>
-            <img src="myndir/cake.png">
+            <p id="pumkin_texti">
+              Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
+              custard filling. The pumpkin is a symbol of harvest time, and
+              pumpkin pie is often eaten during the fall and early winter.
+            </p>
+            <button id="index_button">
+              <a href="recipe.html">See more</a>
+            </button>
+          </section>
+          <!--  <img id="cake" src="myndir/cake.png" />-->
         </section>
         <section id="latest-recipes-section">
-            <p>Get ready to get busy</p>
-            <h2>Check out our latest recipes</h2>
-            <div class="card">
-                <p>September</p>
-                <h3>Lax sushi rolls</h3>
-                <p><a class="card-button">Read more</a></p>
-                <img src="myndir/Bitmap.png" />
-            </div>
-            <!--copy paste 6 sinnum-->
-            <p><a class="button">See more</a></p>
-        </section>
-        <section id="cookbook">
-            <p>Announcement time</p>
-            <p id="Book-ad">Our book is out</p>
-            <p>Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol
-                of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
-            <p><a class="button">See more</a></p>
-            <img src="myndir/matarbok.png" />
-        </section>
-        <section id="video-section">
-            <p>Want some action?</p>
-            <h2>Check out our video recipes</h2>
-            <div class="video-card">
-                <p>August 2016</p>
-                <p>Legumes printaniers</p>
-                <img src="myndir/Salat.png" />
-            </div>
-            <div class="video-card">
-                <p>August 2016</p>
-                <p>Blossoming cookie</p>
-                <img src="Myndir/Bollur.png" />
-            </div>
-            <div class="video-card">
-                <p>August 2016</p>
-                <p>Blueberry pie</p>
-                <img src="myndir/Skeljar.png" />
-            </div>
+          <p>Get ready to get busy</p>
+          <h2>Check out our latest recipes</h2>
+          <div class="card">
+            <p>September</p>
+            <h3>Lax sushi rolls</h3>
+            <p><a class="card-button">Read more</a></p>
+            <img src="myndir/Bitmap.png" />
+          </div>
+          <!--copy paste 6 sinnum-->
+          <p><a class="button">See more</a></p>
         </section>
 
-    </main>
-    <section class="newsletter">
-        <p> Craving more</p>
-        <p>Subscribe to our newsletter</p>
+        
+        <section id="cookbook">
+          <p>Announcement time</p>
+          <p id="Book-ad">Our book is out</p>
+          <p>
+            Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
+            custard filling. The pumpkin is a symbol of harvest time, and
+            pumpkin pie is often eaten during the fall and early winter.
+          </p>
+          <p><a class="button">See more</a></p>
+          <img src="myndir/matarbok.png" />
+        </section>
+       
+        <section id="video-section">
+          <p>Want some action?</p>
+          <h2>Check out our video recipes</h2>
+          <div class="video-card">
+            <p>August 2016</p>
+            <p>Legumes printaniers</p>
+            <img src="myndir/Salat.png" />
+          </div>
+          <div class="video-card">
+            <p>August 2016</p>
+            <p>Blossoming cookie</p>
+            <img src="Myndir/Bollur.png" />
+          </div>
+          <div class="video-card">
+            <p>August 2016</p>
+            <p>Blueberry pie</p>
+            <img src="myndir/Skeljar.png" />
+          </div>
+        </section>
+      </main>
+      <section class="newsletter">
         <div>
-            <label for="netfang">Netfang:</label>
-            <input type="email" name="netfang" id="netfang" placeholder="email@example.com" />
+          <p>Craving more</p>
+          <h1>Subscribe to our newsletter</h1>
         </div>
-        <div class="newsletter-button">Subscribe now </div>
-    </section>
+        <div>
+          <label for="netfang">Email</label>
+          <input
+            type="email"
+            name="netfang"
+            id="netfang"
+            placeholder="email@example.com"
+          />
+        </div>
+        <div class="newsletter-button">Subscribe now</div>
+      </section>
+    </main>
+
     <footer>
-        <p>Come and join us for more recipes</p>
-        <div class="footer-icons">
-            <img src="myndir/Facebook.png" />
-            <img src="myndir/Twitter.png" />
-            <!--Youtube iconið er ekki img heldur hlutir-->
-        </div>
-        <p>yamyam.com</p>
+      <p id="footer_texti">Come and join us for more recipes</p>
+      <section class="footer-icons">
+        <div class="icon"><img class="img"  src="myndir/Facebook.png" /></div>
+        <div class="icon"><img class="img"  src="myndir/Twitter.png" /></div>
+        <div class="icon"><img class="img" src="myndir/Youtube.png"/></div>
+      </section>
+      <p id="footer_logo">yamyam.com</p>
     </footer>
-</body>
+  </body>
+</html>
