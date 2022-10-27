@@ -1,4 +1,12 @@
-@import 'styles/newsletter';
+@import 'styles/config';
+@import 'styles/fonts';
+@import 'styles/base';
+@import 'styles/layout';
 @import 'styles/hero_section';
 @import 'styles/button';
 @import 'styles/cookbook';
+@import 'styles/header.scss';
+@import 'styles/footer';
+@import 'styles/newsletter';
+
+@import 'styles/ingredients&method';
