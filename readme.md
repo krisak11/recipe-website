@@ -38,6 +38,12 @@ git push -u origin main
 
 https://gist.github.com/Alinaprotsyuk/3d58f8cd52eb03a11283d64beb0e083e#setting-up-your-branches
 
+# Clone-a project frá öðrum til að vinna út frá (t.d. óla) en búa til eigið repository til að pusha á:
+
+1. Í code editor velja "clone project", copy/paste-a linkinn sem fæst ef smellt er á græna "code" takkann á vefsíðunni fyrir repository-ið.
+
+2. Þurfum að breyta upstream repository í okkar eigið repository. git remote set-url origin </https://github.com/github_user_name/repository_name>
+
 # Nytsamlegar git skipanir
 
 git branch : nafnið á branchinu sem þú ert á.
