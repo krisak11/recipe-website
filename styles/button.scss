@@ -15,9 +15,6 @@ button:hover {
   a{
     text-decoration-color:  #fafafa;;
   }
-  #cookbook_button{
-    margin-bottom: 5%;
-  }
 }
 
 #cookbook_button{
@@ -31,6 +28,13 @@ button:hover {
     margin-bottom: 15%;
   }
 
+}
+
+#cookbook_button:hover{
+  background-color: #E3CDB1;
+  a{
+    text-decoration-color:  #fafafa;;
+  }
 }
 
 a {
