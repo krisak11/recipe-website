@@ -6,11 +6,18 @@ button {
 }
 
 #index_button {
-  text-decoration: none;
+  opacity: 0.6;
   text-align: center;
+  text-decoration: none;
 
-  @media only screen and (max-width: 500px) {
-    opacity: 0.6;
+  @media only screen and (max-width: 650px) {
+    height: 42px;
+    margin-top: 10%;
+    width: 191px;
+  }
+
+  @media only screen and (min-width: 651px){
+    opacity: 1.0;
   }
 }
 
@@ -25,8 +32,8 @@ button:hover {
 }
 
 #cookbook_button {
-  margin-bottom: 5%;
   background-color: #f7f1eb;
+  margin-bottom: 5%;
   @media only screen and (max-width: 734px) {
     margin: 0 auto;
   }
@@ -38,8 +45,6 @@ button:hover {
 
 a {
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;

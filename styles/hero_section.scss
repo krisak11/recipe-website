@@ -1,17 +1,32 @@
 #hero-section {
+  background-color: #fafafa;
   background-image: url("myndir/cake.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-color: #fafafa;
-  height: 100%;
-
   display: flex;
-  width: 100%;
-  max-width: var(--max-width);
+  height: 100%;
   margin: 0 auto;
+  max-width: var(--max-width);
+  width: 100%;
 
-  @media only screen and (max-width: 500px){
+  @media only screen and (max-width: 500px) {
+    background-position: 15% 95%;
+    background-size: 226%;
     height: 560px;
+  }
+
+  @media only screen and (min-width: 501px) {
+    background-position: 18% 65%;
+    background-size: 151%;
+  }
+
+  @media only screen and (min-width: 650px) {
+    background-position: 105% 95%;
+    background-size: 93%;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    background-position: 100% 95%;
+    background-size: 59%;
   }
 }
 
@@ -20,9 +35,9 @@
   flex-direction: column;
 
   p {
+    display: flex;
     font-family: "Poppins";
     font-style: normal;
-    display: flex;
   }
 
   @media only screen and (max-width: 320px) {
@@ -31,20 +46,20 @@
   }
 
   @media only screen and (min-width: 321px) {
-    width: 550px;
-    margin-left: 10%;
-    margin-bottom: 232px;
-    margin-top: 147px;
     justify-content: center;
+    margin-bottom: 232px;
+    margin-left: 10%;
+    margin-top: 147px;
+    width: 550px;
   }
 
   #our_latest_recipe {
-    font-weight: 500;
     color: #e3cdb1;
+    font-weight: 500;
 
     @media only screen and (max-width: 320px) {
-      font-weight: 500;
       font-size: 12px;
+      font-weight: 500;
       line-height: 18px;
       margin: 0 auto;
     }
@@ -57,10 +72,8 @@
   }
 
   h2 {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 700;
     color: #000000;
+    font-family: "Playfair Display";
 
     @media only screen and (max-width: 320px) {
       font-size: 32px;
@@ -70,6 +83,13 @@
     }
 
     @media only screen and (min-width: 321px) {
+      font-size: 42px;
+      line-height: 80px;
+      margin: 0;
+      /* identical to box height */
+    }
+
+    @media only screen and (min-width: 650px) {
       font-size: 60px;
       line-height: 80px;
       margin: 0;
@@ -83,13 +103,13 @@
     }
 
     @media only screen and (min-width: 321px) {
-      font-weight: 300;
+      color: #5e5b69;
       font-size: 18px;
+      font-weight: 300;
       height: 128px;
       line-height: 32px;
       /* or 178% */
       margin: 0;
-      color: #5e5b69;
     }
   }
 }
