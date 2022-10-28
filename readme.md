@@ -45,7 +45,8 @@ https://gist.github.com/Alinaprotsyuk/3d58f8cd52eb03a11283d64beb0e083e#setting-u
 
 1. Í code editor velja "clone project", copy/paste-a linkinn sem fæst ef smellt er á græna "code" takkann á vefsíðunni fyrir repository-ið.
 
-2. Þurfum að breyta upstream repository í okkar eigið repository. git remote set-url origin </https://github.com/github_user_name/repository_name>
+2. Þurfum að breyta upstream repository í okkar eigið repository. 
+    git remote set-url origin </https://github.com/github_user_name/repository_name>
 
 # Vinna í eigin branchi fyrir ákveðið feature
 
