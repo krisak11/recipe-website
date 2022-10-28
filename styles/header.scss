@@ -42,25 +42,11 @@
         border-radius: 100px;
         background: #000;
         display: block;
+        position: relative;
         transition: transform 0.3s ease-in-out;
-        position:relative;
+      }
       
-
-        .header-trigger:checked ~ &:first-child {
-        transform: rotate(45deg);
-        top: 8px;
-        position:relative;
-      }
-      .header-trigger:checked ~ &:last-child {
-        transform: rotate(-45deg);
-        top: -8px;
-        position:relative;
-      }
-      .header-trigger:checked ~ &:nth-child(2) {
-        opacity: 0;
-      }
     }
-  }
     nav {
       background: #fafafa;
       width: 100vw;
@@ -102,6 +88,20 @@
       }
     }
   }
+}
+
+.header-trigger:checked ~ .mobile-button :first-child {
+  transform: rotate(45deg);
+  top: 8px;
+  position: relative;
+}
+.header-trigger:checked ~ .mobile-button :last-child {
+  transform: rotate(-45deg);
+  top: -8px;
+  position: relative;
+}
+.header-trigger:checked ~ .mobile-button :nth-child(2) {
+  opacity: 0;
 }
 
 .header-trigger:checked ~ nav {
