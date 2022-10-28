@@ -1,6 +1,44 @@
 button {
   background: #fafafa;
   border: 1px solid #e3cdb1;
+  height: 52px;
+  width: 250px;
+}
+
+.index-button {
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+button:hover {
+  background-color: #E3CDB1;
+  a{
+    text-decoration-color:  #fafafa;;
+  }
+}
+
+#cookbook_button{
+  margin-bottom: 5%;
+  background-color: #f7f1eb;
+  @media only screen and (max-width: 734px){
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 735px){
+    margin-bottom: 15%;
+  }
+
+}
+
+#cookbook_button:hover{
+  background-color: #E3CDB1;
+  a{
+    text-decoration-color:  #fafafa;;
+  }
+}
+
+a {
   font-family: "Poppins";
   font-size: 16px;
   font-style: normal;

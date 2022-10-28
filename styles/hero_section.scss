@@ -6,8 +6,8 @@
   display: flex;
   //width: 889.76px;
   height: 100%;
-  max-width: 100%;
   width: 100%;
+  max-width: var(--max-width);
 }
 
 .hero-text {
@@ -18,6 +18,8 @@
   margin-left: 157px;
   width: 550px;
 
+
+.hero-text {
   .our-latest-recipe {
     color: var(--warm-color);
     font-weight: 500;
