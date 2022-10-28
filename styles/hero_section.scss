@@ -1,53 +1,53 @@
-#hero-section {
-  background-image: url("img/cake.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  //width: 889.76px;
+.hero-section {
   background-color: var(--background-offwhite);
-  height: 100%;
-
+  background-image: url("img/cake.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
   display: flex;
-  width: 100%;
+  //width: 889.76px;
+  height: 100%;
   max-width: 100%;
+  width: 100%;
 }
 
-.hero_text {
+.hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 550px;
-  margin-left: 157px;
   margin-bottom: 232px;
-}
+  margin-left: 157px;
+  width: 550px;
 
-.hero_text {
-  #our_latest_recipe {
+  .our-latest-recipe {
+    color: var(--warm-color);
     font-weight: 500;
     line-height: 1.5rem;
-    color: var(--warm-color);
     margin-top: 147px;
   }
 
-  #pumkin_texti {
-    font-weight: 300;
+  .pumkin-texti {
     font-size: 18px;
+    font-weight: 300;
     height: 128px;
     line-height: 32px;
+
     /* or 178% */
     margin: 0;
   }
 }
 
+
 h2 {
   font-size: 60px;
   line-height: 80px;
+
   /* identical to box height */
 }
 
 button {
   background: var(--background-offwhite);
-  text-decoration: none;
   border: 1px solid var(--warm-color);
   text-align: center;
+  text-decoration: none;
   text-decoration-color: var(--warm-color);
 }
