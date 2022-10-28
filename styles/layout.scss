@@ -1,0 +1,61 @@
+.wrapper {
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin: var(--vertical-space) auto;
+  max-width: var(--max-width);
+  width: calc(100% - (2 * var(--offset)));
+}
+
+.i_m {
+  display: flex;
+  flex-direction: row;
+
+  @media only screen and (max-width: 830px) {
+    flex-direction: column;
+  }
+
+  .ingredients {
+    @media only screen and (max-width: 831px) {
+      margin: 0 auto;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    @media only screen and (min-width: 830px) {
+      margin-left: 9%;
+      margin-right: 9%;
+      margin-top: 90px;
+    }
+
+    @media only screen and (min-width: 1100px) {
+      margin: 0;
+      margin-left: 150px;
+      margin-top: 90px;
+    }
+  }
+
+  .method {
+    @media only screen and (max-width: 830px) {
+      margin: 0 auto;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    @media only screen and (min-width: 831px) {
+      margin-right: 9%;
+      margin-top: 90px;
+    }
+  }
+}
