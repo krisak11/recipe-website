@@ -4,18 +4,36 @@
     <meta charset="utf-8" />
     <title>Hópverkefni 1 - yum&yum</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>&lt;text y=%22.9em%22 font-size=%2290%22>⭐️&lt;/text>&lt;/svg>"
+    />
+    <meta name="viewport" content="width=device-width" />
   </head>
 
   <body>
-    <header>
-      <nav>
-      <h1><a href="../index.html">yum&yum</a></h1>
-      <ul>
-        <li><a href="../pages/latest_recipes.html">Recipes</a></li>
-        <li><a href="../pages/video-recipe.html">Videos</a></li>
-        <li><a href="../pages/about-us.html">About us</a></li>
-      </ul>
-      </nav>
+    <header for="header_trigger">
+      <label>
+        <input type="checkbox" class="header-trigger" id="header_trigger" />
+        <img class="header-logo" src="../img/Logotype.jpg" />
+        <h1>yum&yum</h1>
+        <div class="mobile-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="latest_recipes.html">Recipes</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="video-recipe.html">Videos</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="about-us.html">About</a></li>
+          </ul>
+        </nav>
+      </label>
     </header>
 
     <main>
@@ -117,49 +135,48 @@
       </section>
 
       <section id="latest-recipes-section">
-        <p>All the great recipes</p>
+        <p>Get ready to get busy</p>
         <h2>Check out our latest recipes</h2>
-        <div class="card">
-          <p>September</p>
-          <h3>Lax sushi rolls</h3>
-          <p><a class="card-button">Read more</a></p>
-          <img src="../img/Bitmap.png" />
+        <div class="cards">
+
+          <div class="card">
+            <p>September</p>
+            <div class="content">
+            <h3>Lax sushi rolls</h3>
+            <p><a class="card-button">Read more</a></p>
+            </div> <div class="image"><img src="../img/Bitmap.png" /></div>
+          </div> 
+
+          <div class="card">
+            <p>September</p>
+            <div class="content">
+            <h3>Lax sushi rolls</h3>
+            <p><a class="card-button">Read more</a></p>
+            </div><div class="image"><img src="../img/Bitmap.png" /></div>
+          </div>
+
+          <div class="card">
+            <p>September</p>
+            <div class="content">
+            <h3>Lax sushi rolls</h3>
+            <p><a class="card-button">Read more</a></p>
+            </div><div class="image"><img src="../img/Bitmap.png" /></div>
+          </div>
         </div>
-
-        <section id="latest-recipes-section">
-          <p>Get ready to get busy</p>
-          <h2>Check out our latest recipes</h2>
-          <div class="card">
-            <p>September</p>
-            <h3>Lax sushi rolls</h3>
-            <p><a class="card-button">Read more</a></p>
-            <img src="../img/Bitmap.png" />
-          </div>
-          <!--copy paste 6 sinnum-->
-          <p><a class="button">See more</a></p>
-        </section>
-
-        <section id="latest-recipes-section">
-          <p>Get ready to get busy</p>
-          <h2>Check out our latest recipes</h2>
-          <div class="card">
-            <p>September</p>
-            <h3>Lax sushi rolls</h3>
-            <p><a class="card-button">Read more</a></p>
-            <img src="../img/Bitmap.png" />
-          </div>
-          <!--copy paste 6 sinnum-->
-          <p><a class="button">See more</a></p>
-        </section>
+        <!--copy paste 6 sinnum-->
+        <p><a class="button">See more</a></p>
+      </section>
 
         <p><a class="button">See more</a></p>
       </section>
     </main>
     <section class="newsletter">
-      <p>Craving more</p>
-      <p>Subscribe to our newsletter</p>
       <div>
-        <label for="netfang">Netfang:</label>
+        <p>Craving more</p>
+        <h1>Subscribe to our newsletter</h1>
+      </div>
+      <div>
+        <label for="netfang">Email</label>
         <input
           type="email"
           name="netfang"
