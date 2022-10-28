@@ -2,10 +2,10 @@
   display: flex;
   width: 100%;
   height: 110%;
-  background-image: linear-gradient(0deg, #ffffff 10%, #f7f1eb 10%);
+  background-image: linear-gradient(0deg, #ffffff 20%, #f7f1eb 20%);
   max-width: 1600px;
   margin: auto;
-  @media only screen and (max-width: 734px){
+  @media only screen and (max-width: 850px){
     flex-direction: column;
   }
 
@@ -35,13 +35,15 @@ img {
     -khtml-box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
   }
 
-  @media only screen and (min-width: 735px) {
+  @media only screen and (min-width: 850px) {
     /*
     height: 450px;
     width: 300px;
     */
     width: 33%;
+    margin: 0;
     margin-top: 8%;
+    height: 75%;
     box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
     -moz-box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
     -webkit-box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
@@ -82,13 +84,14 @@ img {
     margin-top: 11%;
   }
 
-  @media only screen and (min-width: 735px) {
+  @media only screen and (min-width: 850px) {
     /*
     width: 320px;
     */
     width: 40%;
     margin-left: 8%;
     margin-top: 4%;
+    margin-right: 6%;
     padding: 3rem;
   }
 
@@ -161,7 +164,7 @@ p {
 
   }
 
-  @media only screen and (min-width: 735px) {
+  @media only screen and (min-width: 850px) {
     #tiny_headertext {
       font-weight: 500;
       font-size: 16px;
@@ -221,7 +224,7 @@ h2 {
     margin: 0 auto;
   }
 
-  @media only screen and (min-width: 735px) {
+  @media only screen and (min-width: 850px) {
     font-size: 42px;
     line-height: 53px;
     margin: 0;
