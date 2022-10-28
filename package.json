@@ -6,7 +6,7 @@
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html *.css",
     "sass": "sass styles.scss styles.css",
-    "sass-watch": "sass --watch *.scss styles.css",
+    "sass-watch": "sass --watch styles.scss styles.css",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "lint": "stylelint styles.scss ./**/*.scss",
     "lint-css": "stylelint styles.css ./**/*.css"
@@ -25,6 +25,7 @@
     "browser-sync": "^2.27.10",
     "concurrently": "^7.5.0",
     "sass": "^1.55.0",
+    "sass-watch": "^0.1.0",
     "stylelint": "^14.14.0",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^28.0.0"

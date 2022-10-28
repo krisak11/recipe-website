@@ -7,18 +7,17 @@
 
 @media (max-width: 600px) {
   header {
-    width: 100vw;
-    height: 60px;
-    background-color: #ffffff;
     display: block;
     position: fixed;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    top: 0;
 
     .header-logo {
-      margin-top: 20px;
-      margin-left: 16px;
-      width: 90px;
-      height: 16.92px;
-      max-width: 90px;
+      width: 133px;
+      height: 25px;
+      max-width: 133px;
     }
 
     h1 {
@@ -27,44 +26,46 @@
   }
 
   label {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    margin: var(--vertical-space) auto;
+    max-width: var(--max-width);
+    width: calc(100% - 2 * var(--offset));
 
     .mobile-button {
-      grid-column-end: 12;
-      margin-right: 30px;
-      margin-top: 17px;
-      float: right;
+      display: grid;
+      flex-direction: right;
 
       span {
-        height: 3px;
+        height: 2px;
         width: 30px;
-        background: black;
+        border-radius: 100px;
+        background: #000;
         display: block;
-        margin-bottom: 5px;
-        position: relative;
-        transition: 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+        position:relative;
+      
 
         .header-trigger:checked ~ &:first-child {
-          transform: rotate(45deg);
-          top: 8px;
-        }
-
-        .header-trigger:checked ~ &:last-child {
-          transform: rotate(-45deg);
-          top: -8px;
-        }
-
-        .header-trigger:checked ~ &:nth-child(2) {
-          opacity: 0;
-        }
+        transform: rotate(45deg);
+        top: 8px;
+        position:relative;
+      }
+      .header-trigger:checked ~ &:last-child {
+        transform: rotate(-45deg);
+        top: -8px;
+        position:relative;
+      }
+      .header-trigger:checked ~ &:nth-child(2) {
+        opacity: 0;
       }
     }
-
+  }
     nav {
       background: #fafafa;
       width: 100vw;
       padding: 20px 70px;
-      margin-top: 60px;
+      margin-top: 50px;
       position: absolute;
       right: -1000px;
       box-sizing: border-box;
@@ -120,16 +121,19 @@
   }
 
   header {
-    display: grid;
-    max-width: var(--max-width);
-    margin: var(--vertical-space) auto;
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    top: 0;
 
     label {
-      display: grid;
+      display: flex;
+      justify-content: space-between;
+      margin: var(--vertical-space) auto;
       max-width: var(--max-width);
-      grid-template-columns: repeat(var(--columns), 1fr);
-      gap: var(--gutter);
-      grid-template-rows: auto;
+      width: calc(100% - 2 * var(--offset));
 
       .header-logo {
         width: 133px;
@@ -143,7 +147,7 @@
 
       nav {
         display: grid;
-        grid-column-end: 13;
+        flex-direction: right;
 
         ul {
           list-style-type: none;
