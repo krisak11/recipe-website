@@ -60,7 +60,7 @@
   .netfang-rammi {
     border-bottom: 1px solid var(--warm-color);
     height: calc(calc(27/8) * 1rem);
-    width: calc(calc(255/16) * 1rem);
+    max-width: 100%;
   }
 
   .newsletter-button {
@@ -69,18 +69,49 @@
     display: flex;
     height: calc(calc(21/8) * 1rem);
     justify-content: center;
-    width: calc(calc(191/16) * 1rem);
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 320px) {
+  .newsletter {
+    .netfang-rammi {
+      width: calc(calc(255/16) * 1rem);
+    }
+
+    .newsletter-button {
+      padding: 0%;
+      width: calc(calc(191/16) * 1rem);
+    }
+  }
+}
+
+@media (min-width: 750px) {
   .newsletter {
     height: calc(calc(339/20) * var(--offset));
+
+    input {
+      font-size: calc(calc(11/8) * 1rem);
+      line-height: calc(calc(29/16) * 1rem);
+    }
+
+    label {
+      font-size: calc(calc(7/8) * 1rem);
+    }
+
+    h1 {
+      font-size: calc(1rem * calc(40/16));
+    }
   }
 
   .newsletter-content {
     justify-content: space-evenly;
     width: 100%;
+
+    div:first-child {
+      flex: 0;
+    }
   }
 
   .newsletter-text {
@@ -88,26 +119,9 @@
     flex-direction: column;
   }
 
-  .newsletter-content div:first-child {
-    flex: 0;
-  }
-
   .netfang-rammi {
     height: calc(calc(65/16) * 1rem);
     min-width: calc(calc(301/1600) * 100%);
-  }
-
-  .newsletter input {
-    font-size: calc(calc(11/8) * 1rem);
-    line-height: calc(calc(29/16) * 1rem);
-  }
-
-  .newsletter label {
-    font-size: calc(calc(7/8) * 1rem);
-  }
-
-  .newsletter h1 {
-    font-size: calc(1rem * calc(40/16));
   }
 
   .newsletter p,
@@ -124,6 +138,7 @@
 @media (min-width: 1100px) {
   .newsletter {
     padding: 0;
+
     .newsletter-content {
       align-items: flex-end;
       flex: auto;
@@ -132,10 +147,11 @@
       justify-content: space-evenly;
       max-width: var(--max-width);
     }
+
     .newsletter-content div:first-child {
       flex: none;
     }
-  
+
     .newsletter-text {
       display: auto;
       min-width: calc(calc(565/1600) * 100%);
