@@ -6,7 +6,7 @@
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html *.css",
     "sass": "sass styles.scss styles.css",
-    "sass-watch": "sass --watch *.scss styles.css",
+    "sass-watch": "sass --watch styles.scss styles.css",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "lint": "stylelint styles.scss ./**/*.scss",
     "lint-css": "stylelint styles.css ./**/*.css"
