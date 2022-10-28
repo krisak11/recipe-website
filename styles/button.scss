@@ -1,6 +1,45 @@
 button {
   background: #fafafa;
   border: 1px solid #e3cdb1;
+  text-decoration: none;
+  height: 52px;
+  width: 250px;
+}
+
+.index-button {
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+button:hover {
+  background-color: #E3CDB1;
+  a{
+    text-decoration-color:  #fafafa;;
+  }
+}
+
+#cookbook_button{
+  margin-bottom: 5%;
+  background-color: #f7f1eb;
+  @media only screen and (max-width: 849px){
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 850px){
+    margin-bottom: 15%;
+  }
+
+}
+
+#cookbook_button:hover{
+  background-color: #E3CDB1;
+  a{
+    text-decoration-color:  #fafafa;;
+  }
+}
+
+a {
   font-family: "Poppins";
   font-size: 16px;
   font-style: normal;
@@ -9,13 +48,5 @@ button {
   text-align: center;
   text-decoration: none;
   text-decoration-color: #e3cdb1;
-}
-
-.index-button{
-    background-image: linear-gradient(90deg, #e3cdb1 50%, #fafafa 50%);
-    height: 3.25rem;
-    text-align: center;
-    text-decoration: none;
-    width: 50%;
 }
 
