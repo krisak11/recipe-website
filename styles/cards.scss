@@ -1,7 +1,7 @@
-#latest-recipes-section h2{
+ h2{
     margin-bottom: var(--spacing);
 }
-#latest-recipes-section .cards {
+ .cards {
     display:grid;
     gap: var(--gutter);
     grid-template-rows: auto;
@@ -39,8 +39,9 @@
 
     h3 {
         font-size: calc(var(--font-base-body-px)*(18/16));
+        color: var(--color-heading);
     }
-    p {
+    p a{
         font-size: calc(var(--font-base-body-px)*(14/16));
         color: var(--warm-color);
     }
@@ -57,7 +58,7 @@
     }
 }*/
 @media (min-width: 600px) {
-    #latest-recipes-section .cards {
+     .cards {
         display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
         .card{
@@ -72,11 +73,10 @@
         .card > .content p{
             font-size: var(--font-base-body-px);
         }
-
     }
 }
 @media (min-width: 900px) {
-    #latest-recipes-section .cards {
+     .cards {
         display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
         .card{
