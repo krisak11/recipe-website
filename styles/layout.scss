@@ -18,46 +18,47 @@ main {
   width: calc(100% - (2 * var(--offset)));
 }
 
-.i_m{
-    display: flex;
+.i-m {
+  display: flex;
+
+  @media only screen and (max-width: 830px) {
+    flex-direction: column;
+  }
+
+  @media only screnn and (min-width: 831px) {
     flex-direction: row;
+  }
+}
 
-    @media only screen and (max-width: 830px){
-      flex-direction: column;
-    }
+.ingredients {
+  @media only screen and (max-width: 831px) {
+    margin: 0 auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 
-    .ingredients{
-      @media only screen and (max-width: 831px){
-        margin: 0 auto;
-        margin-left: 25px;
-        margin-right: 25px;
-      }
-    
-      @media only screen and (min-width: 830px) {
-        margin-top: 90px;
-        margin-right: 9%;
-        margin-left: 9%; 
-      }
+  @media only screen and (min-width: 830px) {
+    margin-top: 90px;
+    margin-right: 9%;
+    margin-left: 9%;
+  }
 
-      @media only screen and (min-width: 1100px) {
-        margin: 0;
-        margin-left: 150px;
-        margin-top: 90px;
-      }
-    }
+  @media only screen and (min-width: 1100px) {
+    margin: 0;
+    margin-left: 150px;
+    margin-top: 90px;
+  }
+}
 
-    .method{
-        @media only screen and (max-width: 830px){
-          margin: 0 auto;
-          margin-left: 25px;
-          margin-right: 25px;
-        }
-      
-        @media only screen and (min-width: 831px) {
-          margin-top: 90px;
-          margin-right: 9%;
+.method {
+  @media only screen and (max-width: 830px) {
+    margin: 0 auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 
-        }
-      
-    }
+  @media only screen and (min-width: 831px) {
+    margin-top: 90px;
+    margin-right: 9%;
+  }
 }
