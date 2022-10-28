@@ -12,7 +12,6 @@
     }
 }
 .card > .image {
-    height: 300px;
     order:-1;
 }
 .card > .image img {
@@ -26,6 +25,7 @@
 .card p {
     padding: 0.5rem;
     font-size: calc(var(--font-base-body-px)*(12/16));
+    color: var(--color-text-month);
 }
   
 .card > .content { 
@@ -42,6 +42,7 @@
     }
     p {
         font-size: calc(var(--font-base-body-px)*(14/16));
+        color: var(--warm-color);
     }
 }
 
