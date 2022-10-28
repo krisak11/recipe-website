@@ -1,23 +1,18 @@
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar */
-
-/* https://www.youtube.com/watch?v=x_VYl7zz1XY */
-
 /* mobile */
 
 @media (max-width: 600px) {
   header {
+    background-color: var(--newsletter-color);
     display: block;
-    position: fixed;
-    width: 100vw;
     height: 80px;
-    background-color: #fff;
+    position: fixed;
     top: 0;
+    width: 100vw;
 
     .header-logo {
-      width: 133px;
       height: 25px;
       max-width: 133px;
+      width: 133px;
     }
 
     h1 {
@@ -31,86 +26,89 @@
     margin: var(--vertical-space) auto;
     max-width: var(--max-width);
     width: calc(100% - 2 * var(--offset));
+  }
 
-    .mobile-button {
-      display: grid;
-      flex-direction: right;
-
-      span {
-        height: 2px;
-        width: 30px;
-        border-radius: 100px;
-        background: #000;
-        display: block;
-        position: relative;
-        transition: transform 0.3s ease-in-out;
-      }
-      
+  nav > ul {
+    .nav-divider {
+      background-color: var(--nav-divider-color);
+      height: 1px;
+      width: 290px;
     }
-    nav {
-      background: #fafafa;
-      width: 100vw;
-      padding: 20px 70px;
-      margin-top: 50px;
-      position: absolute;
-      right: -1000px;
-      box-sizing: border-box;
-      transition: right 0.3s ease-in-out;
 
-      ul {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        align-items: center;
-
-        .nav-divider {
-          width: 290px;
-          height: 1px;
-          background-color: #f7f1eb;
-        }
-
-        :first-child {
-          opacity: 1;
-        }
-
-        li {
-          padding-bottom: var(--gutter);
-
-          a {
-            font-family: "Playfair_Display", normal;
-            font-weight: 700;
-            font-size: 60px;
-            line-height: 60px;
-            text-decoration: none;
-            color: #000000;
-          }
-        }
-      }
+    :first-child {
+      opacity: 1;
     }
   }
-}
 
-.header-trigger:checked ~ .mobile-button :first-child {
-  transform: rotate(45deg);
-  top: 8px;
-  position: relative;
-}
-.header-trigger:checked ~ .mobile-button :last-child {
-  transform: rotate(-45deg);
-  top: -8px;
-  position: relative;
-}
-.header-trigger:checked ~ .mobile-button :nth-child(2) {
-  opacity: 0;
-}
+  label > nav {
+    background: var(--background);
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 20px 70px;
+    position: absolute;
+    right: -1000px;
+    transition: right 0.3s ease-in-out;
+    width: 100vw;
 
-.header-trigger:checked ~ nav {
-  right: 0;
-  transition: right 0.3s ease-in-out;
-}
+    ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+    }
+  }
 
-.header-trigger {
-  display: none;
+  nav > ul li {
+    padding-bottom: var(--gutter);
+  }
+
+  .nav-links {
+    color: var(--color-heading);
+    font-family: var(--font-family-heading);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-decoration: none;
+  }
+
+  .mobile-button {
+    display: grid;
+
+    span {
+      background: var(--color-heading);
+      border-radius: 100px;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      width: 30px;
+    }
+  }
+
+  .header-trigger:checked ~ .mobile-button :first-child {
+    position: relative;
+    top: 8px;
+    transform: rotate(45deg);
+  }
+
+  .header-trigger:checked ~ .mobile-button :last-child {
+    position: relative;
+    top: -8px;
+    transform: rotate(-45deg);
+  }
+
+  .header-trigger:checked ~ .mobile-button :nth-child(2) {
+    opacity: 0;
+  }
+
+  .header-trigger:checked ~ nav {
+    right: 0;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .header-trigger {
+    display: none;
+  }
 }
 
 /* Desktop */
@@ -121,60 +119,60 @@
   }
 
   header {
+    background-color: var(--newsletter-color);
     display: block;
-    position: fixed;
-    width: 100vw;
     height: 80px;
-    background-color: #fff;
+    position: fixed;
     top: 0;
+    width: 100vw;
+  }
 
-    label {
-      display: flex;
-      justify-content: space-between;
-      margin: var(--vertical-space) auto;
-      max-width: var(--max-width);
-      width: calc(100% - 2 * var(--offset));
+  header > label {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--vertical-space) auto;
+    max-width: var(--max-width);
+    width: calc(100% - 2 * var(--offset));
 
-      .header-logo {
-        width: 133px;
-        height: 25px;
-        max-width: 133px;
-      }
-
-      h1 {
-        display: none;
-      }
-
-      nav {
-        display: grid;
-        flex-direction: right;
-
-        ul {
-          list-style-type: none;
-          display: flex;
-
-          > :first-child {
-            display: none;
-            opacity: 0;
-          }
-
-          li {
-            flex-direction: column;
-            margin-left: var(--gutter);
-            margin-right: var(--gutter);
-
-            a {
-              text-decoration: none;
-              font-family: "Poppins";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 2px;
-              color: #9b9b9b;
-            }
-          }
-        }
-      }
+    .header-logo {
+      height: 25px;
+      max-width: 133px;
+      width: 133px;
     }
+
+    h1 {
+      display: none;
+    }
+
+    nav {
+      display: grid;
+      flex-direction: right;
+    }
+  }
+
+  label > nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  nav > ul > :first-child {
+    display: none;
+    opacity: 0;
+  }
+
+  label ul > li {
+    flex-direction: column;
+    margin-left: var(--gutter);
+    margin-right: var(--gutter);
+  }
+
+  .nav-links {
+    color: var(--nav-link-color);
+    font-family: var(--font-family-base);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2px;
+    text-decoration: none;
   }
 }
