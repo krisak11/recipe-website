@@ -25,6 +25,7 @@
   }
 .card p {
     padding: 0.5rem;
+    font-size: calc(var(--font-base-body-px)*(12/16));
 }
   
 .card > .content { 
@@ -35,6 +36,13 @@
     gap: var(--spacing);
     justify-content: space-between;
     padding: 0.5rem;
+
+    h3 {
+        font-size: calc(var(--font-base-body-px)*(18/16));
+    }
+    p {
+        font-size: calc(var(--font-base-body-px)*(14/16));
+    }
 }
 
 
@@ -54,6 +62,16 @@
         .card{
             grid-column: span 6;
         }
+        .card p{
+            font-size: calc(var(--font-base-body-px)*(14/16));
+        }
+        .card > .content h3{
+            font-size: calc(var(--font-base-body-px)*(22/16));
+        }
+        .card > .content p{
+            font-size: var(--font-base-body-px);
+        }
+
     }
 }
 @media (min-width: 900px) {
