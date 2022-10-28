@@ -1,4 +1,7 @@
 # Hvernig skal keyra forrit:
+Nauðsynlegt að setja upp node og npm á tölvunni sinni fyrst.
+Byrja á að sækja pakka með npm install:
+npm install...
 # Hvernig skall collaborate-a frá grunni:
 1. Búa til möppu í tölvunni sinni, t.d. test2022 (þar sem maður vill geyma forritið).
 2. Opna code editor (Vscode, intelliJ, ...)
@@ -37,6 +40,27 @@ git push -u origin main
         git push (líka hægt að skrifa: <git push origin main> eða <git push origin branchname> til að pusha á ákveðið branch.
 
 https://gist.github.com/Alinaprotsyuk/3d58f8cd52eb03a11283d64beb0e083e#setting-up-your-branches
+
+# Clone-a project frá öðrum til að vinna út frá (t.d. óla) en búa til eigið repository til að pusha á:
+
+1. Í code editor velja "clone project", copy/paste-a linkinn sem fæst ef smellt er á græna "code" takkann á vefsíðunni fyrir repository-ið.
+
+2. Þurfum að breyta upstream repository í okkar eigið repository. git remote set-url origin </https://github.com/github_user_name/repository_name>
+
+# Vinna í eigin branchi fyrir ákveðið feature
+
+1. Til að búa til nýtt branch og fara á það: git checkout -b <branch_nafn>
+2. Líka hægt að búa til branch án þess að fara á það: git branch <branch_nafn>
+3. Til að skipta um branch: git checkout <branch_nafn>
+4. Skoða lista af öllum branches: git branch -a
+
+Svo kóðar maður á þessu branchi eitt feature, gerir commit.
+Pushar svo á þetta branch (origin er <remote>): git push origin <branch_nafn>.
+
+Þegar feature-ið er tilbúið. Gerir þá: git pull origin main
+og athugar hvort allt virkar ennþá eða hvort eitthvað merge conflict sem þarf að laga.
+
+Loks fer maður á github.com og í repository-ið og gerir Pull Request (græni takkinn) til að merge-a þessu við main.
 
 # Nytsamlegar git skipanir
 

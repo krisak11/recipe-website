@@ -1,68 +1,55 @@
-#hero-section {
-  background-image: url("myndir/cake.png");
-  background-repeat: no-repeat;
+.hero-section {
+  background-color: var(--background-offwhite);
+  background-image: url("img/cake.png");
   background-position: bottom right;
-  width: 889.76px;
-  background-color: #fafafa;
-  height: 100vh;
-
+  background-repeat: no-repeat;
   display: flex;
+  //width: 889.76px;
+  height: 100%;
   width: 100%;
-  max-width: 1600px;
-  margin: auto;
+  max-width: var(--max-width);
 }
 
-.hero_text {
+.hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 550px;
-  margin-left: 157px;
   margin-bottom: 232px;
-}
+  margin-left: 157px;
+  width: 550px;
 
-p {
-  font-family: "Poppins";
-  font-style: normal;
-  display: flex;
-}
 
-.hero_text {
-  #tiny_headertext {
+.hero-text {
+  .our-latest-recipe {
+    color: var(--warm-color);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #e3cdb1;
+    line-height: 1.5rem;
     margin-top: 147px;
   }
 
-  #paragraph {
-    font-weight: 300;
+  .pumkin-texti {
     font-size: 18px;
+    font-weight: 300;
     height: 128px;
     line-height: 32px;
+
     /* or 178% */
     margin: 0;
-    color: #5e5b69;
   }
 }
 
+
 h2 {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 700;
   font-size: 60px;
   line-height: 80px;
-  margin: 0;
-  margin-top: 0;
+
   /* identical to box height */
-  color: #000000;
 }
 
 button {
-  background: #fafafa;
-  text-decoration: none;
-  border: 1px solid #e3cdb1;
+  background: var(--background-offwhite);
+  border: 1px solid var(--warm-color);
   text-align: center;
-  text-decoration-color: #e3cdb1;
+  text-decoration: none;
+  text-decoration-color: var(--warm-color);
 }
