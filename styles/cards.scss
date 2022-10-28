@@ -1,7 +1,7 @@
-#latest-recipes-section h2{
+ h2{
     margin-bottom: var(--spacing);
 }
-#latest-recipes-section .cards {
+ .cards {
     display:grid;
     gap: var(--gutter);
     grid-template-rows: auto;
@@ -12,7 +12,6 @@
     }
 }
 .card > .image {
-    height: 300px;
     order:-1;
 }
 .card > .image img {
@@ -25,6 +24,8 @@
   }
 .card p {
     padding: 0.5rem;
+    font-size: calc(var(--font-base-body-px)*(12/16));
+    color: var(--color-text-month);
 }
   
 .card > .content { 
@@ -35,6 +36,15 @@
     gap: var(--spacing);
     justify-content: space-between;
     padding: 0.5rem;
+
+    h3 {
+        font-size: calc(var(--font-base-body-px)*(18/16));
+        color: var(--color-heading);
+    }
+    p a{
+        font-size: calc(var(--font-base-body-px)*(14/16));
+        color: var(--warm-color);
+    }
 }
 
 
@@ -48,16 +58,25 @@
     }
 }*/
 @media (min-width: 600px) {
-    #latest-recipes-section .cards {
+     .cards {
         display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
         .card{
             grid-column: span 6;
         }
+        .card p{
+            font-size: calc(var(--font-base-body-px)*(14/16));
+        }
+        .card > .content h3{
+            font-size: calc(var(--font-base-body-px)*(22/16));
+        }
+        .card > .content p{
+            font-size: var(--font-base-body-px);
+        }
     }
 }
 @media (min-width: 900px) {
-    #latest-recipes-section .cards {
+     .cards {
         display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
         .card{
