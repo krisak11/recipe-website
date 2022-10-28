@@ -1,24 +1,52 @@
 button {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  
-  text-decoration: none;
-
   background: #fafafa;
-  text-decoration: none;
   border: 1px solid #e3cdb1;
-  text-align: center;
-  text-decoration-color: #e3cdb1;
+  text-decoration: none;
+  height: 52px;
+  width: 250px;
 }
 
-#index_button{
-    background-image: linear-gradient(90deg, #e3cdb1 50%, #fafafa 50%);
-    width: 50%;
-    text-decoration: none;
-    text-align: center;
-    height: 3.25rem;
+.index-button {
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+}
+
+button:hover {
+  background-color: #E3CDB1;
+  a{
+    text-decoration-color:  #fafafa;;
+  }
+}
+
+#cookbook_button{
+  margin-bottom: 5%;
+  background-color: #f7f1eb;
+  @media only screen and (max-width: 849px){
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 850px){
+    margin-bottom: 15%;
+  }
+
+}
+
+#cookbook_button:hover{
+  background-color: #E3CDB1;
+  a{
+    text-decoration-color:  #fafafa;;
+  }
+}
+
+a {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-color: #e3cdb1;
 }
 
