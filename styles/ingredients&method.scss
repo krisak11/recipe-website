@@ -6,6 +6,10 @@
   @media only screen and (max-width: 320px) {
     margin-bottom: 0;
   }
+}
+
+.ingredients {
+  width: 100%;
 
   h2 {
     color: #d0d0d0;
@@ -14,21 +18,17 @@
     line-height: 53px;
     margin-bottom: 40px;
   }
-}
 
-.ingredients {
-  width: 100%;
-
-  .ingredients_name {
+  .ingredients-name {
     margin-bottom: 20px;
   }
 
-  .ingredients_list {
+  .ingredients-list {
     display: flex;
     flex-direction: row;
     margin: auto;
 
-    .list_tolur {
+    .list-tolur {
       display: flex;
       flex-direction: column;
       margin-right: 50px;
@@ -38,7 +38,7 @@
       }
     }
 
-    .list_ord {
+    .list-ord {
       display: flex;
       flex-direction: column;
 
@@ -51,27 +51,34 @@
 }
 
 .method {
+  h2 {
+    color: #d0d0d0;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    line-height: 53px;
+    margin-bottom: 40px;
+  }
   p {
     margin-bottom: 1rem;
     word-wrap: break-word;
   }
 }
 
-.not_in_mobile {
+.not-in-mobile {
   @media only screen and (max-width: 500px) {
     display: none;
   }
 }
 
 .ingredients {
-  .ingredients_name {
+  .ingredients-name {
     color: #000;
     font-family: Poppins;
     font-size: 18px;
     line-height: 17px;
   }
 
-  .list_tolur {
+  .list-tolur {
     p {
       color: #e3cdb1;
       font-family: "Playfair Display";
@@ -80,7 +87,7 @@
     }
   }
 
-  .list_ord {
+  .list-ord {
     p {
       color: #9b9b9b;
       font-family: Poppins;
