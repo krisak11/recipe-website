@@ -1,0 +1,93 @@
+.hero-section-video {
+  background-image: linear-gradient(90deg, var(--color-heading) 40%, transparent 80%), url("img/Video.png");
+  background-position: right;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  height: 110%;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.hero-text {
+  .video-h2 {
+    color: var(--newsletter-color);
+    font-family: var(--font-family-heading);
+  }
+
+  .mobile-pumkintext-video {
+    @media only screen and (max-width: 650px) {
+      display: none;
+    }
+
+    @media only screen and (min-width: 651px) {
+      color: var(--color-text-month);
+      font-size: 18px;
+      font-weight: 300;
+      height: 128px;
+      line-height: 32px;
+      margin: 0;
+      text-align: inherit;
+    }
+  }
+
+  .mobile-pumkin-video {
+    @media only screen and (max-width: 650px) {
+      color: #9b9b9b;
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 27px;
+      margin-left: 30px;
+    }
+
+    @media only screen and (min-width: 651px) {
+      display: none;
+    }
+  }
+}
+
+.hero-info-video {
+  display: flex;
+  margin: 0;
+  margin-bottom: 35px;
+
+  p {
+    color: --newsletter-color;
+  }
+
+  strong {
+    color: var(--newsletter-color);
+    font-family: var(--font-family-base);
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+    margin-left: var(--gutter);
+  }
+
+  @media only screen and (min-width: 501px) {
+    flex-direction: row;
+    margin-left: var(--gutter);
+    margin-top: 15px;
+  }
+
+  @media only screen and (min-width: 650px) {
+    margin-left: 0;
+  }
+}
+
+.video-icon {
+  border: 2px solid --newsletter-color;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 354px;
+  margin-top: 280px;
+
+  .playbutton {
+    margin: 0 auto;
+    padding: 60px;
+  }
+}

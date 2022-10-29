@@ -7,14 +7,48 @@
 
 @font-face {
   font-display: swap;
-  font-family: Poppins;
+  font-family: PoppinsL;
   font-style: normal;
   src: url("./fonts/Poppins/Poppins-Light.ttf") format("woff");
 }
 
 @font-face {
   font-display: swap;
-  font-family: Poppins;
+  font-family: PoppinsM;
   font-style: normal;
   src: url("./fonts/Poppins/Poppins-Medium.ttf") format("woff");
+}
+
+.ingredients-name {
+  color: var(--color-heading);
+  font-family: var(--font-family-heading);
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.list-tolur {
+  p {
+    color: #e3cdb1;
+    font-family: var(--font-family-heading);
+    font-size: 36px;
+    line-height: 18px;
+  }
+}
+
+.list-ord {
+  p {
+    color: #9b9b9b;
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    line-height: 17px;
+  }
+}
+
+.method {
+  p {
+    color: #5e5b69;
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    line-height: 32px;
+  }
 }

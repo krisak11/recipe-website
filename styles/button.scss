@@ -10,32 +10,42 @@ button {
   text-align: center;
   text-decoration: none;
   width: 50%;
+
+  @media only screen and (max-width: 650px) {
+    margin-top: 17px;
+    margin: 0 auto;
+    width: 191px;
+    height: 42px;
+  }
+
+  @media only screen and (min-width: 651px) {
+    margin-top: 30px;
+  }
 }
 
 button:hover {
-  background-color: #E3CDB1;
-  a{
-    text-decoration-color:  #fafafa;;
+  background-color: #e3cdb1;
+  a {
+    text-decoration-color: #fafafa;
   }
 }
 
-#cookbook_button{
+#cookbook_button {
   margin-bottom: 5%;
   background-color: #f7f1eb;
-  @media only screen and (max-width: 849px){
+  @media only screen and (max-width: 849px) {
     margin: 0 auto;
   }
 
-  @media only screen and (min-width: 850px){
+  @media only screen and (min-width: 850px) {
     margin-bottom: 15%;
   }
-
 }
 
-#cookbook_button:hover{
-  background-color: #E3CDB1;
-  a{
-    text-decoration-color:  #fafafa;;
+#cookbook_button:hover {
+  background-color: #e3cdb1;
+  a {
+    text-decoration-color: #fafafa;
   }
 }
 
@@ -54,8 +64,8 @@ a {
     width: 191px;
   }
 
-  @media only screen and (min-width: 651px){
-    opacity: 1.0;
+  @media only screen and (min-width: 651px) {
+    opacity: 1;
   }
 }
 

@@ -1,9 +1,9 @@
 .hero-section {
-  background-color: #fafafa;
+  background-color: --background-offwhite;
   background-image: url("img/cake.png");
   background-repeat: no-repeat;
   display: flex;
-  height: 100%;
+  height: 700px;
   margin: 0 auto;
   max-width: var(--max-width);
   width: 100%;
@@ -11,7 +11,7 @@
   @media only screen and (max-width: 500px) {
     background-position: 15% 95%;
     background-size: 226%;
-    height: 560px;
+    height: 500px;
   }
 
   @media only screen and (min-width: 501px) {
@@ -28,7 +28,6 @@
     background-position: 100% 95%;
     background-size: 59%;
   }
-
 
   @media only screen and (min-width: 501px) {
     background-position: 18% 65%;
@@ -47,21 +46,47 @@
 }
 
 .hero-text {
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
 
-  p {
-    display: flex;
-    font-family: "Poppins";
-    font-style: normal;
+  h2 {
+    color: var(--color-heading);
+    font-family: var(--font-family-heading);
+
+    @media only screen and (max-width: 320px) {
+      font-size: 32px;
+      line-height: 43px;
+      margin: 0 auto;
+      margin-bottom: 17px;
+    }
+
+    @media only screen and (min-width: 321px) {
+      font-size: 42px;
+      line-height: 80px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 650px) {
+      font-size: 60px;
+      line-height: 80px;
+      margin: 0;
+    }
   }
 
-  @media only screen and (max-width: 320px) {
+  p {
+    display: flex;
+    font-family: var(--font-family-base);
+    width: 550px;
+    word-wrap: break-word;
+  }
+
+  @media only screen and (max-width: 650px) {
     margin: 0 auto;
     margin-top: 71.66px;
   }
 
-  @media only screen and (min-width: 321px) {
+  @media only screen and (min-width: 651px) {
     justify-content: center;
     margin-bottom: 232px;
     margin-left: 10%;
@@ -72,14 +97,15 @@
   .our-latest-recipe {
     color: #e3cdb1;
     font-weight: 500;
-    @media only screen and (max-width: 320px) {
+
+    @media only screen and (max-width: 650px) {
       font-size: 12px;
       font-weight: 500;
       line-height: 18px;
       margin: 0 auto;
     }
 
-    @media only screen and (min-width: 321px) {
+    @media only screen and (min-width: 651px) {
       font-size: 16px;
       line-height: 24px;
       margin: 0;
@@ -87,61 +113,93 @@
   }
 
   .pumkin-texti {
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 500px) {
       display: none;
     }
 
-    @media only screen and (min-width: 321px) {
+    @media only screen and (min-width: 501px) {
       color: #5e5b69;
       font-size: 18px;
       font-weight: 300;
       height: 128px;
       line-height: 32px;
-      /* or 178% */
+      margin: 2rem;
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 650px) {
+      color: #5e5b69;
+      font-size: 18px;
+      font-weight: 300;
+      height: 128px;
+      line-height: 32px;
       margin: 0;
+      text-align: inherit;
+    }
+  }
+
+  .mobile-pumkintext {
+    @media only screen and (max-width: 650px) {
+      display: none;
+    }
+
+    @media only screen and (min-width: 651px) {
+      color: #5e5b69;
+      font-size: 18px;
+      font-weight: 300;
+      height: 128px;
+      line-height: 32px;
+      margin: 0;
+      text-align: inherit;
+    }
+  }
+
+  .mobile-pumkin {
+    @media only screen and (max-width: 650px) {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 27px;
+      margin-left: 30px;
+    }
+
+    @media only screen and (min-width: 651px) {
+      display: none;
     }
   }
 }
 
-h2 {
-  color: #000000;
-  font-family: "Playfair Display";
+.hero-info {
+  display: flex;
+  margin-bottom: 35px;
+  margin-top: 15px;
 
-  @media only screen and (max-width: 320px) {
-    font-size: 32px;
-    line-height: 43px;
-    margin: 0 auto;
-    margin-bottom: 17px;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+    margin-left: 30px;
   }
 
-  @media only screen and (min-width: 321px) {
-    font-size: 42px;
-    line-height: 80px;
-    margin: 0;
-    /* identical to box height */
+  @media only screen and (min-width: 501px) {
+    flex-direction: row;
+    margin-left: 30px;
   }
 
   @media only screen and (min-width: 650px) {
-    font-size: 60px;
-    line-height: 80px;
-    margin: 0;
-    /* identical to box height */
+    margin-left: 0;
+  }
+
+  p {
+    font-size: 18px;
+    margin-right: 35px;
+  }
+
+  strong {
+    color: #000;
+    font-family: var(--font-family-base);
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  img {
+    margin-right: 13px;
   }
 }
-
-  #pumkin_texti {
-    @media only screen and (max-width: 320px) {
-      display: none;
-    }
-
-    @media only screen and (min-width: 321px) {
-      color: #5e5b69;
-      font-size: 18px;
-      font-weight: 300;
-      height: 128px;
-      line-height: 32px;
-      /* or 178% */
-      margin: 0;
-    }
-  }
-
