@@ -26,6 +26,11 @@
     margin: var(--vertical-space) auto;
     max-width: var(--max-width);
     width: calc(100% - 2 * var(--offset));
+    max-height: 30px;
+
+    >a{
+      margin-top: 0;
+    }
   }
 
   nav > ul {
