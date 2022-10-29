@@ -1,4 +1,4 @@
-.i_m {
+.i-m {
   height: 100%;
   margin: 0 auto;
   margin-bottom: 180px;
@@ -13,51 +13,47 @@
 
   h2 {
     color: #d0d0d0;
-    font-family: "Playfair Display";
+    font-family: var(--font-family-heading);
     font-size: 40px;
     line-height: 53px;
     margin-bottom: 40px;
   }
+}
 
-  .ingredients-name {
-    margin-bottom: 20px;
+.ingredients-name {
+  margin-bottom: 20px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+  .list-tolur {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
   }
 
-  .ingredients-list {
+  .list-ord {
     display: flex;
-    flex-direction: row;
-    margin: auto;
+    flex-direction: column;
+  }
 
-    .list-tolur {
-      display: flex;
-      flex-direction: column;
-      margin-right: 50px;
-
-      p {
-        margin-bottom: 20px;
-      }
-    }
-
-    .list-ord {
-      display: flex;
-      flex-direction: column;
-
-      /* or 94% */
-      p {
-        margin-bottom: 20px;
-      }
-    }
+  p {
+    margin-bottom: 20px;
   }
 }
 
 .method {
   h2 {
     color: #d0d0d0;
-    font-family: "Playfair Display";
+    font-family: var(--font-family-heading);
     font-size: 40px;
     line-height: 53px;
     margin-bottom: 40px;
   }
+
   p {
     margin-bottom: 1rem;
     word-wrap: break-word;
@@ -67,41 +63,5 @@
 .not-in-mobile {
   @media only screen and (max-width: 500px) {
     display: none;
-  }
-}
-
-.ingredients {
-  .ingredients-name {
-    color: #000;
-    font-family: Poppins;
-    font-size: 18px;
-    line-height: 17px;
-  }
-
-  .list-tolur {
-    p {
-      color: #e3cdb1;
-      font-family: "Playfair Display";
-      font-size: 36px;
-      line-height: 18px;
-    }
-  }
-
-  .list-ord {
-    p {
-      color: #9b9b9b;
-      font-family: Poppins;
-      font-size: 18px;
-      line-height: 17px;
-    }
-  }
-}
-
-.method {
-  p {
-    color: #5e5b69;
-    font-family: Poppins;
-    font-size: 18px;
-    line-height: 32px;
   }
 }

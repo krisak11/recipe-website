@@ -1,105 +1,87 @@
-#cookbook {
+.cookbook {
+  background-image: linear-gradient(0deg, var(--newsletter-color) 20%, #f7f1eb 20%);
   display: flex;
-  width: 100%;
   height: 110%;
-  background-image: linear-gradient(0deg, #ffffff 20%, #f7f1eb 20%);
-  max-width: 1600px;
   margin: auto;
+  max-width: 1600px;
+  width: 100%;
+
   @media only screen and (max-width: 850px){
     flex-direction: column;
   }
-
 }
 
 .cookbook-img{
   @media only screen and (max-width: 320px) {
-    margin: 0 auto;
-    margin-top: 54px;
+    box-shadow: -13px 8px 1px rgba(0, 0, 0, 2%);
     margin-left: 20%;
     margin-right: 20%;
-    
-    box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
-    -moz-box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
-    -webkit-box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
-    -khtml-box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
+    margin: 0 auto;
+    margin-top: 54px;
+    -khtml-box-shadow: -13px 8px 1px rgba(0, 0, 0, 2%);
+    -moz-box-shadow: -13px 8px 1px rgba(0, 0, 0, 2%);
+    -webkit-box-shadow: -13px 8px 1px rgba(0, 0, 0, 2%);
   }
 
   @media only screen and (min-width: 321px) {
+    box-shadow: -13px 8px 1px rgba(0, 0, 0, 2%);
     margin: 0 auto;
     margin-top: 54px;
     width: 50%;
-    
-    box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
-    -moz-box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
-    -webkit-box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
-    -khtml-box-shadow: -13px 8px 1px rgba(0, 0, 0, 0.02);
+    -khtml-box-shadow: -13px 8px 1px rgba(0, 0, 0, 2%);
+    -moz-box-shadow: -13px 8px 1px rgba(0, 0, 0, 2%);
+    -webkit-box-shadow: -13px 8px 1px rgba(0, 0, 0,2%);
   }
 
   @media only screen and (min-width: 850px) {
-    /*
-    height: 450px;
-    width: 300px;
-    */
-    width: 33%;
+    box-shadow: -20px 14px 1px rgba(0, 0, 0, 2%);
+    height: 75%;
     margin: 0;
     margin-top: 8%;
-    height: 75%;
-    box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
-    -moz-box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
-    -webkit-box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
-    -khtml-box-shadow: -20px 14px 1px rgba(0, 0, 0, 0.02);
+    width: 33%;
+    -khtml-box-shadow: -20px 14px 1px rgba(0, 0, 0, 2%);
+    -moz-box-shadow: -20px 14px 1px rgba(0, 0, 0, 2%);
+    -webkit-box-shadow: -20px 14px 1px rgba(0, 0, 0,2%);
   }
 
   @media only screen and (min-width: 1170px) {
-    margin-top: 8%;
-    margin-right: 13%;
+    box-shadow: -30px 18px 1px rgba(0, 0, 0, 2%);
     height: 70%;
+    margin-right: 13%;
+    margin-top: 8%;
     width: 25%;
-    /*
-    min-width: 1187px
-    height: 607.6182861328125px;
-    width: 440px;
-    */
-    box-shadow: -30px 18px 1px rgba(0, 0, 0, 0.02);
-    -moz-box-shadow: -30px 18px 1px rgba(0, 0, 0, 0.02);
-    -webkit-box-shadow: -30px 18px 1px rgba(0, 0, 0, 0.02);
-    -khtml-box-shadow: -30px 18px 1px rgba(0, 0, 0, 0.02);
+    -khtml-box-shadow: -30px 18px 1px rgba(0, 0, 0, 2%);
+    -moz-box-shadow: -30px 18px 1px rgba(0, 0, 0, 2%);
+    -webkit-box-shadow: -30px 18px 1px rgba(0, 0, 0,2%);
   }
 }
 
-.cookbook_text {
+.cookbook-text {
   display: flex;
   flex-direction: column;
   width: 50%;
   width: 25%;
 
   @media only screen and (max-width: 320px) {
-    width: 100%;
     margin-top: 11%;
     text-align: center;
+    width: 100%;
   }
 
   @media only screen and (min-width: 321px) {
-    width: 100%;
     margin-top: 11%;
+    width: 100%;
   }
 
   @media only screen and (min-width: 850px) {
-    /*
-    width: 320px;
-    */
-    width: 40%;
     margin-left: 8%;
-    margin-top: 4%;
     margin-right: 6%;
+    margin-top: 4%;
     padding: 3rem;
+    width: 40%;
   }
 
   @media only screen and (min-width: 1170px) {
-    /*
-    1187px
-    width: 579px;
-    */
     margin-left: 16%;
     margin-right: 6%;
     margin-top: 8%;
@@ -108,113 +90,108 @@
 }
 
 p {
-  font-family: "Poppins";
-  font-style: normal;
-  display: flex;
   color: #5e5b69;
+  display: flex;
+  font-family: var(--font-family-base);
 }
 
-#paragraph {
+.paragraph {
   margin-bottom: 4.5%;
 }
 
-#tiny_headertext {
+.tiny_headertext {
   color: #e3cdb1;
 }
 
-.cookbook_text {
+.cookbook-text {
   @media only screen and (max-width: 320px) {
-    #tiny_headertext {
+    .tiny_headertext {
       display: none;
     }
 
-    #paragraph {
+    .paragraph {
       display: none;
     }
 
-    #mobile_paragraph {
+    .mobile-paragraph {
       display: flex;
-      font-weight: 300;
       font-size: 15px;
+      font-weight: 300;
       line-height: 24px;
-      /* or 160% */
     }
   }
 
   @media only screen and (min-width: 321px) {
-    #tiny_headertext {
-      font-weight: 500;
+    .tiny_headertext {
       font-size: 16px;
+      font-weight: 500;
       line-height: 24px;
       margin: 0 auto;
     }
 
-    #paragraph {
-      word-wrap: break-word;
-      font-weight: 300;
+    .paragraph {
       font-size: 18px;
+      font-weight: 300;
       line-height: 32px;
       margin: 5%;
       margin-bottom: 30px;
+      word-wrap: break-word;
     }
 
-    #mobile_paragraph{
+    .mobile_paragraph{
       display: none;
     }
 
   }
 
   @media only screen and (min-width: 850px) {
-    #tiny_headertext {
-      font-weight: 500;
+    .tiny_headertext {
       font-size: 16px;
+      font-weight: 500;
       line-height: 24px;
       margin: 0;
     }
 
-    #paragraph {
-      word-wrap: break-word;
-      font-weight: 300;
+    .paragraph {
       font-size: 18px;
+      font-weight: 300;
       line-height: 32px;
       margin-left: 0 ;
+      word-wrap: break-word;
     }
 
-    #mobile_paragraph{
+    .mobile-paragraph { 
       display: none;
     }
   }
 
   @media only screen and (min-width: 1170px) {
-    #tiny_headertext {
-      font-weight: 500;
+    .tiny_headertext {
       font-size: 16px;
+      font-weight: 500;
       line-height: 24px;
     }
 
-    #paragraph {
-      font-weight: 300;
+    .paragraph {
       font-size: 18px;
+      font-weight: 300;
       line-height: 32px;
-      /* or 178% */
     }
 
-    #mobile_paragraph {
+    .mobile_paragraph {
       display: none;
     }
   }
 
   h2 {
-    font-family: "Playfair Display";
-    font-style: normal;
-    color: #000000;
-    margin: 0;
+    color: var(--color-heading);
+    font-family: var(--font-family-heading);
     font-weight: 700;
+    margin: 0;
   
     @media only screen and (max-width: 320px) {
       font-size: 32px;
       line-height: 43px;
-  
     }
   
     @media only screen and (min-width: 321px) {
@@ -238,13 +215,13 @@ p {
 
 
 
-.tolvu_h2{
+.tolvu-h2{
   @media only screen and (max-width: 320px){
     display: none;
   }
 }
 
-.mobile_h2{
+.mobile-h2{
   @media only screen and (min-width: 321px){
     display: none;
   }

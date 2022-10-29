@@ -1,5 +1,5 @@
 footer {
-  background-color: #fff;
+  background-color: var(--newsletter-color);
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -17,7 +17,7 @@ footer {
   align-items: center;
   color: #000;
   display: flex;
-  font-family: Poppins;
+  font-family: var(--font-family-base);
   font-size: 18px;
   justify-content: center;
   line-height: 17px;
@@ -40,7 +40,7 @@ footer {
   align-items: flex-end;
   color: #d0d0d0;
   display: flex;
-  font-family: PoppinsM;
+  font-family: var(--font-family-base);
   font-size: 14px;
   justify-content: center;
   letter-spacing: -0.2917px;

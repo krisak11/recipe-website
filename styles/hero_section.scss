@@ -43,17 +43,16 @@
     background-position: 100% 95%;
     background-size: 59%;
   }
-
 }
 
 .hero-text {
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
-  color: --color-text;
 
   h2 {
-    color: --color-heading;
-    font-family: Playfair Display;
+    color: var(--color-heading);
+    font-family: var(--font-family-heading);
 
     @media only screen and (max-width: 320px) {
       font-size: 32px;
@@ -77,7 +76,7 @@
 
   p {
     display: flex;
-    font-family: PoppinsL;
+    font-family: var(--font-family-base);
     width: 550px;
     word-wrap: break-word;
   }
@@ -98,6 +97,7 @@
   .our-latest-recipe {
     color: #e3cdb1;
     font-weight: 500;
+
     @media only screen and (max-width: 650px) {
       font-size: 12px;
       font-weight: 500;
@@ -124,7 +124,6 @@
       height: 128px;
       line-height: 32px;
       margin: 2rem;
-      /* or 178% */
       text-align: center;
     }
 
@@ -135,7 +134,6 @@
       height: 128px;
       line-height: 32px;
       margin: 0;
-      /* or 178% */
       text-align: inherit;
     }
   }
@@ -144,6 +142,7 @@
     @media only screen and (max-width: 650px) {
       display: none;
     }
+
     @media only screen and (min-width: 651px) {
       color: #5e5b69;
       font-size: 18px;
@@ -151,7 +150,6 @@
       height: 128px;
       line-height: 32px;
       margin: 0;
-      /* or 178% */
       text-align: inherit;
     }
   }
@@ -173,7 +171,8 @@
 .hero-info {
   display: flex;
   margin-bottom: 35px;
-  margin-top:15px ;
+  margin-top: 15px;
+
   @media only screen and (max-width: 500px) {
     flex-direction: column;
     margin-left: 30px;
@@ -193,11 +192,11 @@
     margin-right: 35px;
   }
 
-  strong{
-    font-family: PoppinsL;
+  strong {
+    color: #000;
+    font-family: var(--font-family-base);
     margin-left: 15px;
     margin-right: 5px;
-    color: #000;
   }
 
   img {

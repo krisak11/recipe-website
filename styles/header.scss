@@ -1,3 +1,4 @@
+
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar */
 
@@ -7,18 +8,18 @@
 
 @media (max-width: 600px) {
   header {
-    width: 100vw;
-    height: 60px;
-    background-color: #ffffff;
+    background-color: var(--newsletter-color);
     display: block;
+    height: 60px;
     position: fixed;
+    width: 100vw;
 
     .header-logo {
+      height: 16.92px;
       margin-top: 20px;
       margin-left: 16px;
-      width: 90px;
-      height: 16.92px;
       max-width: 90px;
+      width: 90px;
     }
 
     h1 {
@@ -30,28 +31,28 @@
     display: grid;
 
     .mobile-button {
+      float: right;
       grid-column-end: 12;
       margin-right: 30px;
       margin-top: 17px;
-      float: right;
 
       span {
-        height: 3px;
-        width: 30px;
         background: black;
         display: block;
+        height: 3px;
         margin-bottom: 5px;
         position: relative;
         transition: 0.3s ease-in-out;
+        width: 30px;
 
         .header-trigger:checked ~ &:first-child {
-          transform: rotate(45deg);
           top: 8px;
+          transform: rotate(45deg);
         }
 
         .header-trigger:checked ~ &:last-child {
-          transform: rotate(-45deg);
           top: -8px;
+          transform: rotate(-45deg);
         }
 
         .header-trigger:checked ~ &:nth-child(2) {
@@ -62,24 +63,24 @@
 
     nav {
       background: #fafafa;
-      width: 100vw;
-      padding: 20px 70px;
       margin-top: 60px;
+      box-sizing: border-box;
+      padding: 20px 70px;
       position: absolute;
       right: -1000px;
-      box-sizing: border-box;
       transition: right 0.3s ease-in-out;
+      width: 100vw;
 
       ul {
+        align-items: center;
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        align-items: center;
 
         .nav-divider {
+          background-color: #f7f1eb;
           width: 290px;
           height: 1px;
-          background-color: #f7f1eb;
         }
 
         :first-child {
@@ -90,12 +91,12 @@
           padding-bottom: var(--gutter);
 
           a {
+            color: var(--color-heading);
             font-family: "Playfair_Display", normal;
-            font-weight: 700;
             font-size: 60px;
+            font-weight: 700;
             line-height: 60px;
             text-decoration: none;
-            color: #000000;
           }
         }
       }
@@ -121,20 +122,20 @@
 
   header {
     display: grid;
-    max-width: var(--max-width);
     margin: var(--vertical-space) auto;
+    max-width: var(--max-width);
 
     label {
       display: grid;
-      max-width: var(--max-width);
-      grid-template-columns: repeat(var(--columns), 1fr);
       gap: var(--gutter);
+      grid-template-columns: repeat(var(--columns), 1fr);
       grid-template-rows: auto;
+      max-width: var(--max-width);
 
       .header-logo {
-        width: 133px;
         height: 25px;
         max-width: 133px;
+        width: 133px;
       }
 
       h1 {
@@ -142,12 +143,12 @@
       }
 
       nav {
-        display: grid;
         grid-column-end: 13;
+        display: grid;
 
         ul {
-          list-style-type: none;
           display: flex;
+          list-style-type: none;
 
           > :first-child {
             display: none;
@@ -160,13 +161,13 @@
             margin-right: var(--gutter);
 
             a {
-              text-decoration: none;
+              color: #9b9b9b;
               font-family: "Poppins";
+              font-size: 15px;
               font-style: normal;
               font-weight: 400;
-              font-size: 15px;
               line-height: 2px;
-              color: #9b9b9b;
+              text-decoration: none;
             }
           }
         }
