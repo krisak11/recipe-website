@@ -1,5 +1,5 @@
 .hero-section {
-  background-color: #fafafa;
+  background-color: --background-offwhite;
   background-image: url("img/cake.png");
   background-repeat: no-repeat;
   display: flex;
@@ -44,21 +44,16 @@
     background-size: 59%;
   }
 
-  &--video {
-    background-image: linear-gradient(90deg, black 40%, transparent 80%),
-      url("img/Video.png");
-    background-position: right;
-    background-size: contain;
-  }
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
+  color: --color-text;
 
   h2 {
-    color: #000;
-    font-family: "Playfair Display";
+    color: --color-heading;
+    font-family: Playfair Display;
 
     @media only screen and (max-width: 320px) {
       font-size: 32px;
@@ -71,25 +66,20 @@
       font-size: 42px;
       line-height: 80px;
       margin: 0 auto;
-      /* identical to box height */
     }
 
     @media only screen and (min-width: 650px) {
       font-size: 60px;
       line-height: 80px;
       margin: 0;
-      /* identical to box height */
     }
-  }
-
-  .video-h2 {
-    color: #fff;
   }
 
   p {
     display: flex;
-    font-family: "Poppins";
-    font-style: normal;
+    font-family: PoppinsL;
+    width: 550px;
+    word-wrap: break-word;
   }
 
   @media only screen and (max-width: 650px) {
@@ -119,10 +109,6 @@
       font-size: 16px;
       line-height: 24px;
       margin: 0;
-    }
-
-    &--video{
-      color: #9B9B9B;
     }
   }
 
@@ -172,7 +158,6 @@
 
   .mobile-pumkin {
     @media only screen and (max-width: 650px) {
-      font-family: "Poppins";
       font-size: 15px;
       line-height: 24px;
       margin-bottom: 27px;
@@ -187,9 +172,8 @@
 
 .hero-info {
   display: flex;
-  margin: 0;
   margin-bottom: 35px;
-
+  margin-top:15px ;
   @media only screen and (max-width: 500px) {
     flex-direction: column;
     margin-left: 30px;
@@ -204,15 +188,16 @@
     margin-left: 0;
   }
 
-  &--video{
-    p{
-      color: #fff;
-    }
-  }
-
   p {
     font-size: 18px;
     margin-right: 35px;
+  }
+
+  strong{
+    font-family: PoppinsL;
+    margin-left: 15px;
+    margin-right: 5px;
+    color: #000;
   }
 
   img {
