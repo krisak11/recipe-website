@@ -203,38 +203,40 @@ p {
       display: none;
     }
   }
-}
 
-h2 {
-  font-family: "Playfair Display";
-  font-style: normal;
-  color: #000000;
-  margin: 0;
-  font-weight: 700;
-
-  @media only screen and (max-width: 320px) {
-    font-size: 32px;
-    line-height: 43px;
-
-  }
-
-  @media only screen and (min-width: 321px) {
-    font-size: 43px;
-    line-height: 43px;
-    margin: 0 auto;
-  }
-
-  @media only screen and (min-width: 850px) {
-    font-size: 42px;
-    line-height: 53px;
+  h2 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    color: #000000;
     margin: 0;
-  }
-
-  @media only screen and (min-width: 1170px) {
-    font-size: 60px;
-    line-height: 80px;
+    font-weight: 700;
+  
+    @media only screen and (max-width: 320px) {
+      font-size: 32px;
+      line-height: 43px;
+  
+    }
+  
+    @media only screen and (min-width: 321px) {
+      font-size: 43px;
+      line-height: 43px;
+      margin: 0 auto;
+    }
+  
+    @media only screen and (min-width: 850px) {
+      font-size: 42px;
+      line-height: 53px;
+      margin: 0;
+    }
+  
+    @media only screen and (min-width: 1170px) {
+      font-size: 60px;
+      line-height: 80px;
+    }
   }
 }
+
+
 
 .tolvu_h2{
   @media only screen and (max-width: 320px){
