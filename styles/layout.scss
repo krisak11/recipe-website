@@ -5,7 +5,7 @@
   grid-template-columns: 100%;
   grid-template-rows: auto;
   min-height: 100%;
-  max-width: 100%;
+  max-width: var(max-width);
   width: 100%;
   
 }
@@ -15,31 +15,26 @@ main {
   gap: var(--vertical-space);
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  margin: var(--vertical-space) auto;
-  max-width: var(--max-width);
-  width: calc(100% - (2 * var(--offset)));
-
-}
-
-.latest-recipes-section{
-  display:grid;
-  gap: var(--vertical-space);
-  grid-template-rows: auto;
+  margin: 0 auto;
+  max-width: var(--max-main-width);
+  //width: calc(100% - (2 * var(--offset)));
   width: 100%;
+  justify-content: center;
+
 }
+
+
 
 .i-m {
-  display:grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
-  gap: var(--vertical-space);
-  width: 100%;
+  display: flex;
 
   @media only screen and (max-width: 830px) {
-    display: flex;
     flex-direction: column;
   }
 
+  @media only screnn and (min-width: 831px) {
+    flex-direction: row;
+  }
 }
 
 .ingredients {
@@ -49,8 +44,16 @@ main {
     margin-right: 7%;
   }
 
+  @media only screen and (min-width: 830px) {
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 6%;
+  }
+
   @media only screen and (min-width: 1100px) {
-    grid-column: 0 / span 6;
+    margin: 0;
+    margin-left: 13%;
+    margin-top: 6%;
   }
 }
 
@@ -62,7 +65,7 @@ main {
   }
 
   @media only screen and (min-width: 831px) {
-    grid-column: 5 / span 7;
+    margin-right: 9%;
     margin-top: 6%;
   }
 }

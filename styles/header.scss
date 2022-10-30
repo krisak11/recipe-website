@@ -3,11 +3,14 @@
 @media (max-width: 600px) {
   header {
     background-color: var(--newsletter-color);
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 80px;
     position: fixed;
     top: 0;
-    width: 100vw;
+    max-width: var(max-main-width);
+    width: 100%;
+    justify-content: center;
 
     .header-logo {
       height: 25px;
@@ -29,7 +32,7 @@
     justify-content: space-between;
     margin: var(--vertical-space) auto;
     max-height: 30px;
-    max-width: var(--max-width);
+    max-width: var(--max-main-width);
     width: calc(100% - 2 * var(--offset));
   }
 
@@ -130,18 +133,25 @@
 
   header {
     background-color: var(--background-offwhite);
-    display: block;
-    height: 80px;
-    position: fixed;
+    //height: 80px;
+    //position: fixed;
     top: 0;
+    max-width: var(--max-main-width);
     width: 100vw;
+    /*nýtt */
+    display: flex;
+    flex-direction: column;
+    //min-height:100vh;
+    position:relative;
+  
+    flex-direction: column;
   }
 
   header > .header-label {
     display: flex;
     justify-content: space-between;
     margin: var(--vertical-space) auto;
-    max-width: var(--max-width);
+    max-width: var(--max-main-width);
     width: calc(100% - 2 * var(--offset));
 
     .header-logo {

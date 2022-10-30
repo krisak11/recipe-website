@@ -1,0 +1,15 @@
+.latest-recipes-section{
+    display:grid;
+    //gap: var(--vertical-space);
+    grid-template-rows: auto;
+    width: 100%;
+    //max-width: 1300px;
+    //justify-content: center;
+
+}
+/* Setur only show recipes checkbox hægra megin á latest-recipes.html*/
+.latest-recipes-section .heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
