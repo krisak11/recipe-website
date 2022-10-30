@@ -7,6 +7,14 @@
   display: flex;
   height: 700px;
   margin: 0 auto;
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  max-width: var(--max-main-width);
+  width: 100%;
+  justify-content: center;
 
   @media screen and (max-width: 800px) {
     background-position: center;
