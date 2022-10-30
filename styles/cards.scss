@@ -103,6 +103,10 @@ h2 {
 
 //Fyrirsagnirnar fyrir ofan cards á homepage
 
+.latest-recipes-heading-home {
+  margin-bottom: var(--spacing);
+}
+
 .latest-recipes-heading-home p {
   max-width: max-content;
 
