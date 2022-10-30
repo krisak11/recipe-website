@@ -4,8 +4,6 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 700px;
-  margin: 0 auto;
   display: grid;
   gap: var(--vertical-space);
   grid-template-columns: repeat(var(--columns-offset), 1fr);
@@ -17,9 +15,9 @@
   width: 100%;
 
   @media screen and (max-width: 900px) {
-    display: flex;
     background-position: center;
     background-size: cover;
+    display: flex;
   }
 }
 
@@ -62,7 +60,6 @@
     margin-top: 32%;
   }
 
-  
   @media only screen and (min-width: 651px) {
     justify-content: center;
     //margin-bottom: 232px;
@@ -70,7 +67,6 @@
     //margin-top: 147px;
     width: 550px;
   }
-  
 
   .our-latest-recipe {
     color: var(--warm-color);

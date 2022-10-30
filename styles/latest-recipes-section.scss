@@ -1,22 +1,22 @@
 .latest-recipes-section {
   //gap: var(--vertical-space);
   grid-template-rows: auto;
-  width: 100%;
   //max-width: 1300px;
   //justify-content: center; margin: 2rem;
   margin: 0 auto;
   margin-top: 2rem;
   max-width: 1600px;
+  width: 100%;
 
-  @media only screen and (max-width: 599px){
+  @media only screen and (max-width: 599px) {
     background-image: linear-gradient(0deg, var(--background-offwhite) 90%, var(--newsletter-color) 90%);
   }
 
-  @media only screen and (min-width: 600px){
+  @media only screen and (min-width: 600px) {
     background-image: linear-gradient(0deg, var(--background-offwhite) 80%, var(--newsletter-color) 80%);
   }
 
-  @media only screen and (min-width: 900px){
+  @media only screen and (min-width: 900px) {
     background-image: linear-gradient(0deg, var(--background-offwhite) 66%, var(--newsletter-color) 66%);
   }
 
@@ -27,57 +27,51 @@
   }
 }
 
-#all-recipes{
-  @media only screen and (max-width: 599px){
+#all-recipes {
+  @media only screen and (max-width: 599px) {
     background-image: linear-gradient(0deg, var(--background-offwhite) 96%, var(--newsletter-color) 96%);
   }
 
-  @media only screen and (min-width: 600px){
+  @media only screen and (min-width: 600px) {
     background-image: linear-gradient(0deg, var(--background-offwhite) 93%, var(--newsletter-color) 93%);
   }
 
-  @media only screen and (min-width: 900px){
+  @media only screen and (min-width: 900px) {
     background-image: linear-gradient(0deg, var(--background-offwhite) 90%, var(--newsletter-color) 90%);
   }
 }
 
+@media only screen and (min-width: 900px) {
+  background-image: linear-gradient(0deg, var(--background-offwhite) 66%, var(--newsletter-color) 66%);
+}
 
+display: grid;
 
-  @media only screen and (min-width: 900px){
-    background-image: linear-gradient(0deg, var(--background-offwhite) 66%, var(--newsletter-color) 66%);
-  }
-
-
-  display: grid;
-
-   
-/* Setur only show recipes checkbox hægra megin á latest-recipes.html*/
+/* Setur only show recipes checkbox hægra megin á latest-recipes.html */
 .latest-recipes-section .heading {
   display: grid;
   gap: var(--vertical-space);
   grid-template-columns: repeat(var(--columns-offset), 1fr);
 
-  .content{
+  .content {
     grid-column: 2/span 4;
   }
 
-  .filters{
+  .filters {
     grid-column: 9;
   }
 }
 
 @media (min-width: 600px) {
   .latest-recipes-section {
-    /* top right bottom left*/
-    margin: 2rem 0 2rem;
+    /* top right bottom left */
+    margin: 2rem 0;
   }
 }
-
 
 @media (min-width: 900px) {
   .latest-recipes-section {
-    /* top right bottom left*/
-    margin: 2rem 0 2rem;
+    /* top right bottom left */
+    margin: 2rem 0;
   }
 }
-
