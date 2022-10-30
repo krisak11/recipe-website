@@ -57,7 +57,7 @@ h2 {
   margin-top: 3rem;
 }
 
-/*@media (min-width: 300px) {
+/* @media (min-width: 300px) {
     #latest-recipes-section .cards {
         display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
@@ -65,7 +65,7 @@ h2 {
             grid-column: span 12;
         }
     }
-}*/
+} */
 
 @media (min-width: 600px) {
   .cards {
@@ -97,6 +97,47 @@ h2 {
 
     .card {
       grid-column: span 4;
+    }
+  }
+}
+
+//Fyrirsagnirnar fyrir ofan cards á homepage
+
+.latest-recipes-heading-home p {
+  max-width: max-content;
+
+  @media (min-width: 900px) {
+    font-size: 1rem;
+  }
+}
+
+.latest-recipes-heading-home h2 {
+  margin-bottom: 0%;
+  max-width: max-content;
+  min-width: max-content;
+
+  @media (min-width: 900px) {
+    font-size: calc(calc(40/16) * 1rem);
+  }
+}
+
+//Fyrirsagnirnar fyrir ofan cards á latest recipes síðunni
+
+.latest-recipes-section .heading {
+  p {
+    color: var(--warm-color);
+    font-family: var(--font-family-base-bolder);
+
+    @media (min-width: 900px) {
+      font-size: 1rem;
+    }
+  }
+
+  h2 {
+    color: var(--color-heading);
+
+    @media (min-width: 900px) {
+      font-size: calc(calc(60/16) * 1rem);
     }
   }
 }

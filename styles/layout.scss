@@ -26,6 +26,17 @@ main {
   width: 100%;
 }
 
+.latest-recipes-heading-home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (min-width: 600px) {
+    align-items: flex-start;
+  }
+}
+
 .i-m {
   display: grid;
   gap: var(--vertical-space);
