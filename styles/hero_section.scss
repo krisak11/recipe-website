@@ -10,10 +10,11 @@
   gap: var(--vertical-space);
   grid-template-columns: repeat(var(--columns-offset), 1fr);
   grid-template-rows: auto;
+  height: 700px;
+  justify-content: center;
   margin: 0 auto;
   max-width: var(--max-main-width);
   width: 100%;
-  justify-content: center;
 
   @media screen and (max-width: 900px) {
     display: flex;
