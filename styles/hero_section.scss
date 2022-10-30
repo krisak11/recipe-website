@@ -2,16 +2,11 @@
   background-color: var(--background-offwhite);
   background-image: url("img/cake.png");
   background-repeat: no-repeat;
-  display: flex;
-  height: 700px;
   margin: 0 auto;
-  max-width: var(--max-width);
-  width: 100%;
 
   @media only screen and (max-width: 500px) {
     background-position: 15% 95%;
     background-size: 226%;
-    height: 500px;
   }
 
   @media only screen and (min-width: 501px) {
@@ -47,8 +42,6 @@
 
 .hero-text {
   color: var(--color-text);
-  display: flex;
-  flex-direction: column;
 
   h2 {
     color: var(--color-heading);
@@ -168,17 +161,14 @@
 }
 
 .hero-info {
-  display: flex;
   margin-bottom: 35px;
   margin-top: 15px;
 
   @media only screen and (max-width: 500px) {
-    flex-direction: column;
     margin-left: 30px;
   }
 
   @media only screen and (min-width: 501px) {
-    flex-direction: row;
     margin-left: 30px;
   }
 
