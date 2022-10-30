@@ -56,7 +56,29 @@ h2 {
 }
 
 .heading {
+  align-items: center;
+  gap: var(--offset);
   margin-top: 3rem;
+
+  .content {
+    @media (max-width: 600px) {
+      margin-top: calc(var(--offset) * 3);
+    }
+  }
+
+  .filters {
+    color: var(--color-heading);
+    font-family: var(--font-family-heading);
+    min-width: min-content;
+
+    @media (max-width: 600px) {
+      margin-top: calc(var(--offset) * 3);
+    }
+
+    @media (min-width: 600px) {
+      font-size: calc(calc(22/16) * 1rem);
+    }
+  }
 }
 
 @media (max-width: 599px) {
