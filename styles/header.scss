@@ -1,25 +1,18 @@
-
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar */
-
-/* https://www.youtube.com/watch?v=x_VYl7zz1XY */
-
 /* mobile */
 
 @media (max-width: 600px) {
   header {
     background-color: var(--newsletter-color);
     display: block;
-    height: 60px;
+    height: 80px;
     position: fixed;
+    top: 0;
     width: 100vw;
 
     .header-logo {
-      height: 16.92px;
-      margin-top: 20px;
-      margin-left: 16px;
-      max-width: 90px;
-      width: 90px;
+      height: 25px;
+      max-width: 133px;
+      width: 133px;
     }
 
     h1 {
@@ -28,89 +21,99 @@
   }
 
   label {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    margin: var(--vertical-space) auto;
+    max-width: var(--max-width);
+    width: calc(100% - 2 * var(--offset));
+    max-height: 30px;
 
-    .mobile-button {
-      float: right;
-      grid-column-end: 12;
-      margin-right: 30px;
-      margin-top: 17px;
-
-      span {
-        background: black;
-        display: block;
-        height: 3px;
-        margin-bottom: 5px;
-        position: relative;
-        transition: 0.3s ease-in-out;
-        width: 30px;
-
-        .header-trigger:checked ~ &:first-child {
-          top: 8px;
-          transform: rotate(45deg);
-        }
-
-        .header-trigger:checked ~ &:last-child {
-          top: -8px;
-          transform: rotate(-45deg);
-        }
-
-        .header-trigger:checked ~ &:nth-child(2) {
-          opacity: 0;
-        }
-      }
-    }
-
-    nav {
-      background: #fafafa;
-      margin-top: 60px;
-      box-sizing: border-box;
-      padding: 20px 70px;
-      position: absolute;
-      right: -1000px;
-      transition: right 0.3s ease-in-out;
-      width: 100vw;
-
-      ul {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-
-        .nav-divider {
-          background-color: #f7f1eb;
-          width: 290px;
-          height: 1px;
-        }
-
-        :first-child {
-          opacity: 1;
-        }
-
-        li {
-          padding-bottom: var(--gutter);
-
-          a {
-            color: var(--color-heading);
-            font-family: "Playfair_Display", normal;
-            font-size: 60px;
-            font-weight: 700;
-            line-height: 60px;
-            text-decoration: none;
-          }
-        }
-      }
+    >a{
+      margin-top: 0;
     }
   }
-}
 
-.header-trigger:checked ~ nav {
-  right: 0;
-  transition: right 0.3s ease-in-out;
-}
+  nav > ul {
+    .nav-divider {
+      background-color: var(--nav-divider-color);
+      height: 1px;
+      width: 290px;
+    }
 
-.header-trigger {
-  display: none;
+    :first-child {
+      opacity: 1;
+    }
+  }
+
+  label > nav {
+    background: var(--background-offwhite);
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 20px 70px;
+    position: absolute;
+    right: -1000px;
+    transition: right 0.3s ease-in-out;
+    width: 100vw;
+
+    ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+    }
+  }
+
+  nav > ul li {
+    padding-bottom: var(--gutter);
+  }
+
+  .nav-links {
+    color: var(--color-heading);
+    font-family: var(--font-family-heading);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-decoration: none;
+  }
+
+  .mobile-button {
+    display: grid;
+
+    span {
+      background: var(--color-heading);
+      border-radius: 100px;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      width: 30px;
+    }
+  }
+
+  .header-trigger:checked ~ .mobile-button :first-child {
+    position: relative;
+    top: 8px;
+    transform: rotate(45deg);
+  }
+
+  .header-trigger:checked ~ .mobile-button :last-child {
+    position: relative;
+    top: -8px;
+    transform: rotate(-45deg);
+  }
+
+  .header-trigger:checked ~ .mobile-button :nth-child(2) {
+    opacity: 0;
+  }
+
+  .header-trigger:checked ~ nav {
+    right: 0;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .header-trigger {
+    display: none;
+  }
 }
 
 /* Desktop */
@@ -121,57 +124,60 @@
   }
 
   header {
-    display: grid;
+    background-color: var(--newsletter-color);
+    display: block;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  header > label {
+    display: flex;
+    justify-content: space-between;
     margin: var(--vertical-space) auto;
     max-width: var(--max-width);
+    width: calc(100% - 2 * var(--offset));
 
-    label {
-      display: grid;
-      gap: var(--gutter);
-      grid-template-columns: repeat(var(--columns), 1fr);
-      grid-template-rows: auto;
-      max-width: var(--max-width);
-
-      .header-logo {
-        height: 25px;
-        max-width: 133px;
-        width: 133px;
-      }
-
-      h1 {
-        display: none;
-      }
-
-      nav {
-        grid-column-end: 13;
-        display: grid;
-
-        ul {
-          display: flex;
-          list-style-type: none;
-
-          > :first-child {
-            display: none;
-            opacity: 0;
-          }
-
-          li {
-            flex-direction: column;
-            margin-left: var(--gutter);
-            margin-right: var(--gutter);
-
-            a {
-              color: #9b9b9b;
-              font-family: "Poppins";
-              font-size: 15px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 2px;
-              text-decoration: none;
-            }
-          }
-        }
-      }
+    .header-logo {
+      height: 25px;
+      max-width: 133px;
+      width: 133px;
     }
+
+    h1 {
+      display: none;
+    }
+
+    nav {
+      display: grid;
+      flex-direction: right;
+    }
+  }
+
+  label > nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  nav > ul > :first-child {
+    display: none;
+    opacity: 0;
+  }
+
+  label ul > li {
+    flex-direction: column;
+    margin-left: var(--gutter);
+    margin-right: var(--gutter);
+  }
+
+  .nav-links {
+    color: var(--nav-link-color);
+    font-family: var(--font-family-base);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2px;
+    text-decoration: none;
   }
 }
