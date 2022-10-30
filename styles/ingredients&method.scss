@@ -1,8 +1,7 @@
 .i-m {
   height: 100%;
   margin: 0 auto;
-  margin-bottom: 180px; 
-
+  margin-bottom: 180px;
   margin-top: 6%;
   max-width: var(--max-width);
   width: 100%;
@@ -13,8 +12,8 @@
 }
 
 .ingredients {
-  width: 100%;
   grid-column: span 4;
+  width: 100%;
 
   h2 {
     color: #d0d0d0;
@@ -52,6 +51,7 @@
 
 .method {
   grid-column: span 8;
+
   h2 {
     color: #d0d0d0;
     font-family: var(--font-family-heading);
