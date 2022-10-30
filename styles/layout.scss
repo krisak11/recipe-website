@@ -5,8 +5,8 @@
   grid-template-rows: auto;
   margin: 0 auto;
   max-width: 100%;
-  min-height: 100%;
   max-width: var(max-width);
+  min-height: 100%;
   width: 100%;
 }
 
@@ -15,15 +15,12 @@ main {
   gap: var(--vertical-space);
   grid-template-columns: 100%;
   grid-template-rows: auto;
+  justify-content: center;
   margin: 0 auto;
   max-width: var(--max-main-width);
   //width: calc(100% - (2 * var(--offset)));
   width: 100%;
-  justify-content: center;
-
 }
-
-
 
 .latest-recipes-heading-home {
   align-items: center;
@@ -134,10 +131,9 @@ main {
 }
 
 .video-section {
-  .button-container{
-    display:flex;
+  .button-container {
+    display: flex;
     justify-content: center;
     margin: 2rem auto;
-
   }
 }

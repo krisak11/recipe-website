@@ -1,35 +1,35 @@
+.latest-recipes-section {
+  display: grid;
+  //gap: var(--vertical-space);
+  grid-template-rows: auto;
+  //max-width: 1300px;
+  //justify-content: center;
+  margin: 2rem;
+  width: 100%;
 
-
-.latest-recipes-section{
-    display:grid;
-    //gap: var(--vertical-space);
-    grid-template-rows: auto;
-    width: 100%;
-    //max-width: 1300px;
-    //justify-content: center;
-    margin: 2rem;
-   
-    .button-container{
-        display:flex;
-        justify-content: center;
-        margin: 2rem auto;
-    }
-
-}
-/* Setur only show recipes checkbox hægra megin á latest-recipes.html*/
-.latest-recipes-section .heading {
+  .button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 2rem auto;
   }
-  @media (min-width: 600px) {
-    .latest-recipes-section{
-        /* top right bottom left*/
-        margin: 2rem 0 2rem;
-    }
+}
+
+/* Setur only show recipes checkbox hægra megin á latest-recipes.html */
+.latest-recipes-section .heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .latest-recipes-section {
+    /* top right bottom left */
+    margin: 2rem 0;
   }
-  @media (min-width: 900px) {
-    .latest-recipes-section{
-        /* top right bottom left*/
-        margin: 2rem 0 2rem;
-    }
+}
+
+@media (min-width: 900px) {
+  .latest-recipes-section {
+    /* top right bottom left */
+    margin: 2rem 0;
   }
+}
