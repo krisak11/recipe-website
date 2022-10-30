@@ -164,6 +164,7 @@
 
 .mobile-paragraph {
   color: var(--color-text);
+
   @media only screen and (max-width: 320px) {
     display: flex;
     font-size: 15px;
