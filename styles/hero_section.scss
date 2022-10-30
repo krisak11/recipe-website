@@ -4,19 +4,19 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  display: flex;
   height: 700px;
   margin: 0 auto;
   display: grid;
   gap: var(--vertical-space);
-  grid-template-columns: 100%;
+  grid-template-columns: repeat(var(--columns-offset), 1fr);
   grid-template-rows: auto;
   margin: 0 auto;
   max-width: var(--max-main-width);
   width: 100%;
   justify-content: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
+    display: flex;
     background-position: center;
     background-size: cover;
   }
@@ -24,6 +24,7 @@
 
 .hero-text {
   color: var(--color-text);
+  grid-column: 2 / span 6;
 
   h2 {
     color: var(--color-heading);
@@ -57,7 +58,7 @@
 
   @media only screen and (max-width: 650px) {
     margin: 0 auto;
-    margin-top: 71.66px;
+    margin-top: 32%;
   }
 
   @media only screen and (min-width: 651px) {
