@@ -1,11 +1,13 @@
 .wrapper {
+  margin: 0 auto;
   display: grid;
   gap: var(--vertical-space);
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  height: 100vh;
+  min-height: 100%;
   max-width: 100%;
   width: 100%;
+  
 }
 
 main {
@@ -16,6 +18,14 @@ main {
   margin: var(--vertical-space) auto;
   max-width: var(--max-width);
   width: calc(100% - (2 * var(--offset)));
+
+}
+
+.latest-recipes-section{
+  display:grid;
+  gap: var(--vertical-space);
+  grid-template-rows: auto;
+  width: 100%;
 }
 
 .i-m {
