@@ -20,10 +20,6 @@
     background-image: linear-gradient(0deg, var(--background-offwhite) 66%, var(--newsletter-color) 66%);
   }
 
-
-  display: grid;
- 
-
   .button-container {
     display: flex;
     justify-content: center;
@@ -45,6 +41,16 @@
   }
 }
 
+
+
+  @media only screen and (min-width: 900px){
+    background-image: linear-gradient(0deg, var(--background-offwhite) 66%, var(--newsletter-color) 66%);
+  }
+
+
+  display: grid;
+
+   
 /* Setur only show recipes checkbox hægra megin á latest-recipes.html*/
 .latest-recipes-section .heading {
   display: grid;
@@ -59,12 +65,15 @@
     grid-column: 9;
   }
 }
+
 @media (min-width: 600px) {
   .latest-recipes-section {
     /* top right bottom left*/
     margin: 2rem 0 2rem;
   }
 }
+
+
 @media (min-width: 900px) {
   .latest-recipes-section {
     /* top right bottom left*/
@@ -72,4 +81,3 @@
   }
 }
 
- 
