@@ -23,7 +23,6 @@
     @media only screen and (min-width: 651px) {
       color: var(--color-text-month);
       font-size: 18px;
-      font-weight: 300;
       height: 128px;
       line-height: 32px;
       margin: 0;
@@ -79,7 +78,7 @@
 }
 
 .video-icon {
-  border: 2px solid --newsletter-color;
+  border: 2px solid var(--newsletter-color);
   border-radius: 100%;
   display: flex;
   justify-content: center;

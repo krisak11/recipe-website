@@ -2,6 +2,8 @@
   height: 100%;
   margin: 0 auto;
   margin-bottom: 180px;
+  max-width: var(--max-width);
+  width: 100%;
 
   @media only screen and (max-width: 320px) {
     margin-bottom: 0;
@@ -16,12 +18,12 @@
     font-family: var(--font-family-heading);
     font-size: 40px;
     line-height: 53px;
-    margin-bottom: 40px;
   }
 }
 
 .ingredients-name {
-  margin-bottom: 20px;
+  margin-bottom: var(--offset);
+  margin-top: 2.5rem;
 }
 
 .ingredients-list {
@@ -41,7 +43,7 @@
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: var(--offset);
   }
 }
 
@@ -49,13 +51,13 @@
   h2 {
     color: #d0d0d0;
     font-family: var(--font-family-heading);
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 53px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing);
     word-wrap: break-word;
   }
 }

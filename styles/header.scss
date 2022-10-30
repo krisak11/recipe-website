@@ -24,11 +24,11 @@
     display: flex;
     justify-content: space-between;
     margin: var(--vertical-space) auto;
+    max-height: 30px;
     max-width: var(--max-width);
     width: calc(100% - 2 * var(--offset));
-    max-height: 30px;
 
-    >a{
+    > a {
       margin-top: 0;
     }
   }
