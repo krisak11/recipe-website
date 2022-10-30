@@ -1,52 +1,60 @@
- h2{
-    margin-bottom: var(--spacing);
+h2 {
+  margin-bottom: var(--spacing);
 }
- .cards {
-    display:grid;
-    gap: var(--gutter);
-    grid-template-rows: auto;
-    .card {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-}
-.card > .image {
-    order:-1;
-}
-.card > .image img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 300px;
-    object-fit: cover;
-    object-position: 50% 50%;
+
+.cards {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-rows: auto;
+
+  .card {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
+}
+
+.card > .image {
+  order: -1;
+}
+
+.card > .image img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+}
+
 .card p {
-    padding: 0.5rem;
-    font-size: calc(var(--font-base-body-px)*(12/16));
-    color: var(--color-text-month);
-}
-  
-.card > .content { 
-    //border: 1px solid #999; 
-    //border-top: 0;
-    display: flex;
-    flex: 1;
-    gap: var(--spacing);
-    justify-content: space-between;
-    padding: 0.5rem;
-
-    h3 {
-        font-size: calc(var(--font-base-body-px)*(18/16));
-        color: var(--color-heading);
-    }
-    p a{
-        font-size: calc(var(--font-base-body-px)*(14/16));
-        color: var(--warm-color);
-    }
+  color: var(--color-text-month);
+  font-size: calc(var(--font-base-body-px) * (12 / 16));
+  padding: 0.5rem;
 }
 
+.card > .content {
+  //border: 1px solid #999;
+  //border-top: 0;
+  display: flex;
+  flex: 1;
+  gap: var(--spacing);
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  h3 {
+    color: var(--color-heading);
+    font-size: calc(var(--font-base-body-px) * (18 / 16));
+  }
+
+  p a {
+    color: var(--warm-color);
+    font-size: calc(var(--font-base-body-px) * (14 / 16));
+  }
+}
+.heading{
+  margin-top: 3rem;
+}
 
 /*@media (min-width: 300px) {
     #latest-recipes-section .cards {
@@ -57,31 +65,37 @@
         }
     }
 }*/
+
 @media (min-width: 600px) {
-     .cards {
-        display: grid;
-        grid-template-columns: repeat(var(--columns), 1fr);
-        .card{
-            grid-column: span 6;
-        }
-        .card p{
-            font-size: calc(var(--font-base-body-px)*(14/16));
-        }
-        .card > .content h3{
-            font-size: calc(var(--font-base-body-px)*(22/16));
-        }
-        .card > .content p{
-            font-size: var(--font-base-body-px);
-        }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+
+    .card {
+      grid-column: span 6;
     }
-}
-@media (min-width: 900px) {
-     .cards {
-        display: grid;
-        grid-template-columns: repeat(var(--columns), 1fr);
-        .card{
-            grid-column: span 4;
-        }
+
+    .card p {
+      font-size: calc(var(--font-base-body-px) * (14 / 16));
     }
+
+    .card > .content h3 {
+      font-size: calc(var(--font-base-body-px) * (22 / 16));
+    }
+
+    .card > .content p {
+      font-size: var(--font-base-body-px);
+    }
+  }
 }
 
+@media (min-width: 900px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+
+    .card {
+      grid-column: span 4;
+    }
+  }
+}
