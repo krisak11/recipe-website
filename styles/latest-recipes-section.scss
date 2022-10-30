@@ -6,6 +6,11 @@
     //max-width: 1300px;
     //justify-content: center;
 
+    .button-container{
+        display:flex;
+        justify-content: center;
+    }
+
 }
 /* Setur only show recipes checkbox hægra megin á latest-recipes.html*/
 .latest-recipes-section .heading {
