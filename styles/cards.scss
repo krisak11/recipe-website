@@ -52,6 +52,9 @@ h2 {
     font-size: calc(var(--font-base-body-px) * (14 / 16));
   }
 }
+.heading{
+  margin-top: 3rem;
+}
 
 /*@media (min-width: 300px) {
     #latest-recipes-section .cards {
