@@ -12,7 +12,6 @@
 }
 
 .ingredients {
-  grid-column: span 4;
   width: 100%;
 
   h2 {
@@ -50,8 +49,6 @@
 }
 
 .method {
-  grid-column: span 8;
-
   h2 {
     color: #d0d0d0;
     font-family: var(--font-family-heading);

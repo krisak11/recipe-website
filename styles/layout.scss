@@ -20,13 +20,18 @@ main {
   max-width: var(--max-main-width);
   //width: calc(100% - (2 * var(--offset)));
   width: 100%;
+  justify-content: center;
 }
 
 .latest-recipes-heading-home {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  //align-items: center;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: flex-end;
+
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: repeat(var(--columns-offset), 1fr);
 
   @media (min-width: 600px) {
     align-items: flex-start;
@@ -54,7 +59,7 @@ main {
   }
 
   @media only screen and (min-width: 1001px) {
-    grid-column: 0 / span 6;
+    grid-column: 2 / span 2;
   }
 }
 
@@ -99,17 +104,24 @@ main {
 }
 
 .hero-section-video {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: repeat(var(--columns-offset), 1fr);
+  grid-template-rows: auto;
   height: 110%;
   max-width: var(--max-width);
   width: 100%;
+
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero-info-video {
   display: flex;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 900px) {
     flex-direction: column;
   }
 
