@@ -111,7 +111,7 @@
     opacity: 0;
   }
 
-  .header-trigger:checked ~ .header-nav-ul {
+  .header-trigger:checked ~ .header-nav {
     right: 0;
     transition: right 0.3s ease-in-out;
   }
@@ -126,6 +126,10 @@
   .header-trigger {
     display: none;
     opacity: 0;
+  }
+
+  .header-yum-a{
+    margin-top: 0;
   }
 
   header {
@@ -165,7 +169,7 @@
     list-style-type: none;
   }
 
-  .header-nav > ul > :first-child {
+  .header-nav > .header-nav-ul > :first-child {
     display: none;
     opacity: 0;
   }
