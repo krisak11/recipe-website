@@ -94,7 +94,7 @@
   }
 
   .our-latest-recipe {
-    color: #e3cdb1;
+    color: var(--warm-color);
     font-weight: 500;
 
     @media only screen and (max-width: 650px) {
@@ -117,7 +117,7 @@
     }
 
     @media only screen and (min-width: 501px) {
-      color: #5e5b69;
+      color: var(--color-text);
       font-size: 18px;
       font-weight: 300;
       height: 128px;
@@ -127,7 +127,7 @@
     }
 
     @media only screen and (min-width: 650px) {
-      color: #5e5b69;
+      color: var(--color-text);
       font-size: 18px;
       font-weight: 300;
       height: 128px;
@@ -143,7 +143,7 @@
     }
 
     @media only screen and (min-width: 651px) {
-      color: #5e5b69;
+      color: var(--color-text);
       font-size: 18px;
       font-weight: 300;
       height: 128px;
@@ -192,7 +192,7 @@
   }
 
   strong {
-    color: #000;
+    color: var(--color-heading);
     font-family: var(--font-family-base);
     margin-left: 15px;
     margin-right: 5px;

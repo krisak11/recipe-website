@@ -7,14 +7,14 @@ button {
 }
 
 a {
-  font-family: var(--font-family-base);
+  color: var(--warm-color);
+  font-family: var(--font-family-base-bolder);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   text-align: center;
   text-decoration: none;
-  text-decoration-color: var(--warm-color);
 
   @media only screen and (max-width: 650px) {
     height: 42px;
@@ -22,7 +22,6 @@ a {
     width: 191px;
   }
 }
-
 
 .index-button {
   text-align: center;
@@ -41,14 +40,6 @@ a {
   }
 }
 
-button:hover {
-  background-color: var(--warm-color);
-
-  a {
-    text-decoration-color: var(--background-offwhite);
-  }
-}
-
 .cookbook-button {
   background-color: var(--nav-divider-color);
   margin-bottom: 5%;
@@ -62,10 +53,10 @@ button:hover {
   }
 }
 
-.cookbook-button:hover {
+button:hover {
   background-color: var(--warm-color);
 
   a {
-    text-decoration-color: var(--background-offwhite);
+    color: var(--newsletter-color);
   }
 }
