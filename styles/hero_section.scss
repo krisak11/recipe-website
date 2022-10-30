@@ -2,7 +2,27 @@
   background-color: --background-offwhite;
   background-image: url("img/cake.png");
   background-repeat: no-repeat;
+  overflow: hidden;
+
+  .shape{
+   // width: 110%;
+    height: 100%;
+   width: 59%;
+  // height: 100%;
+    background: aqua;
+    opacity: 0.33;
+    clip-path: ellipse(40% 50%);
+   // margin: 10px auto;
+    position: absolute;
+  //position: 100% 95%;
+   box-shadow: 10px 5px 5px red;
+   // size: 59%;
+  // max-height: 700px;
+  overflow: hidden;
+  }
+
   display: flex;
+  justify-content: space-between;
   height: 700px;
   margin: 0 auto;
   max-width: var(--max-width);
@@ -11,6 +31,9 @@
   @media only screen and (max-width: 500px) {
     background-position: 15% 95%;
     background-size: 226%;
+
+    
+
     height: 500px;
   }
 
