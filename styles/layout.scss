@@ -32,32 +32,32 @@ main {
   grid-template-rows: auto;
   width: 100%;
 
-  @media only screen and (max-width: 830px) {
+  @media only screen and (max-width: 1001px) {
     display: flex;
     flex-direction: column;
   }
 }
 
 .ingredients {
-  @media only screen and (max-width: 831px) {
+  @media only screen and (max-width: 1000px) {
     margin: 0 auto;
     margin-left: 7%;
     margin-right: 7%;
   }
 
-  @media only screen and (min-width: 1100px) {
+  @media only screen and (min-width: 1001px) {
     grid-column: 0 / span 6;
   }
 }
 
 .method {
-  @media only screen and (max-width: 830px) {
+  @media only screen and (max-width: 1000px) {
     margin: 0 auto;
     margin-left: 7%;
     margin-right: 7%;
   }
 
-  @media only screen and (min-width: 831px) {
+  @media only screen and (min-width: 1001px) {
     grid-column: 5 / span 7;
   }
 }
@@ -127,5 +127,6 @@ main {
     display:flex;
     justify-content: center;
     margin: 2rem auto;
+
   }
 }
