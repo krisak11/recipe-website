@@ -1,13 +1,13 @@
 .wrapper {
-  margin: 0 auto;
   display: grid;
   gap: var(--vertical-space);
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  min-height: 100%;
+  margin: 0 auto;
   max-width: 100%;
+  min-height: 100%;
+  max-width: var(max-width);
   width: 100%;
-  
 }
 
 main {
@@ -15,31 +15,27 @@ main {
   gap: var(--vertical-space);
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  margin: var(--vertical-space) auto;
-  max-width: var(--max-width);
-  width: calc(100% - (2 * var(--offset)));
-
-}
-
-.latest-recipes-section{
-  display:grid;
-  gap: var(--vertical-space);
-  grid-template-rows: auto;
+  margin: 0 auto;
+  max-width: var(--max-main-width);
+  //width: calc(100% - (2 * var(--offset)));
   width: 100%;
+  justify-content: center;
+
 }
+
+
 
 .i-m {
-  display:grid;
+  display: grid;
+  gap: var(--vertical-space);
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
-  gap: var(--vertical-space);
   width: 100%;
 
   @media only screen and (max-width: 1001px) {
     display: flex;
     flex-direction: column;
   }
-
 }
 
 .ingredients {
@@ -63,5 +59,74 @@ main {
 
   @media only screen and (min-width: 1001px) {
     grid-column: 5 / span 7;
+  }
+}
+
+.hero-section {
+  display: flex;
+  height: 700px;
+  max-width: var(--max-width);
+  width: 100%;
+
+  @media only screen and (max-width: 500px) {
+    height: 500px;
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-info {
+  display: flex;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (min-width: 501px) {
+    flex-direction: row;
+  }
+}
+
+.hero-section-video {
+  display: flex;
+  flex-direction: row;
+  height: 110%;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.hero-info-video {
+  display: flex;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (min-width: 501px) {
+    flex-direction: row;
+  }
+}
+
+.cookbook {
+  display: flex;
+  height: 110%;
+  width: 100%;
+}
+
+.cookbook-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.video-section {
+  .button-container{
+    display:flex;
+    justify-content: center;
+    margin: 2rem auto;
+
   }
 }

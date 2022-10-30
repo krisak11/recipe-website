@@ -2,11 +2,6 @@
   background-image: linear-gradient(90deg, var(--color-heading) 40%, transparent 80%), url("img/Video.png");
   background-position: right;
   background-size: contain;
-  display: flex;
-  flex-direction: row;
-  height: 110%;
-  max-width: var(--max-width);
-  width: 100%;
 }
 
 .hero-text {
@@ -32,7 +27,7 @@
 
   .mobile-pumkin-video {
     @media only screen and (max-width: 650px) {
-      color: #9b9b9b;
+      color: var(--nav-link-color);
       font-size: 15px;
       line-height: 24px;
       margin-bottom: 27px;
@@ -46,12 +41,12 @@
 }
 
 .hero-info-video {
-  display: flex;
   margin: 0;
   margin-bottom: 35px;
 
   p {
-    color: --newsletter-color;
+    color: var(--newsletter-color);
+    margin-right: 35px;
   }
 
   strong {
@@ -88,6 +83,6 @@
   .playbutton {
     cursor: pointer;
     margin: 0 auto;
-    padding: 60px; 
+    padding: 60px;
   }
 }
