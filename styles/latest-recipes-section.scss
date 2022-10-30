@@ -1,3 +1,5 @@
+
+
 .latest-recipes-section{
     display:grid;
     //gap: var(--vertical-space);
@@ -5,7 +7,7 @@
     width: 100%;
     //max-width: 1300px;
     //justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem;
 
     .button-container{
         display:flex;
@@ -19,4 +21,9 @@
     display: flex;
     justify-content: space-between;
   }
-
+  @media (min-width: 600px) {
+    .latest-recipes-section{
+        /* top right bottom left*/
+        margin: 2rem 0 2rem;
+    }
+  }
