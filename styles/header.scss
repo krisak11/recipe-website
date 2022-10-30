@@ -136,22 +136,22 @@
     //height: 80px;
     //position: fixed;
     top: 0;
-    max-width: var(--max-main-width);
-    width: 100vw;
+    max-width: var(--max-width);
+    width: 100%;
     /*nýtt */
     display: flex;
     flex-direction: column;
     //min-height:100vh;
     position:relative;
-  
     flex-direction: column;
+    margin: auto;
   }
 
   header > .header-label {
     display: flex;
     justify-content: space-between;
-    margin: var(--vertical-space) auto;
-    max-width: var(--max-main-width);
+    margin: var(--vertical-space) 0;
+    max-width: var(--max-width);
     width: calc(100% - 2 * var(--offset));
 
     .header-logo {
