@@ -13,7 +13,7 @@
 
 .cookbook-img {
   @media only screen and (max-width: 320px) {
-    box-shadow: -13px 7px rgba(0, 0, 0, 2%);
+    box-shadow: -13px 7px rgb(0 0 0 / 2%);
     margin: 0 auto;
     margin-left: 20%;
     margin-right: 20%;
@@ -21,14 +21,14 @@
   }
 
   @media only screen and (min-width: 321px) {
-    box-shadow: -17px 12px rgba(0, 0, 0, 2%);
+    box-shadow: -17px 12px rgb(0 0 0 / 2%);
     margin: 0 auto;
     margin-top: 54px;
     width: 50%;
   }
 
   @media only screen and (min-width: 850px) {
-    box-shadow: -26px 16px rgba(0, 0, 0, 2%);
+    box-shadow: -26px 16px rgb(0 0 0 / 2%);
     height: 75%;
     margin: 0;
     margin-top: 8%;
@@ -36,7 +36,7 @@
   }
 
   @media only screen and (min-width: 1170px) {
-    box-shadow: -30px 18px rgba(0, 0, 0, 2%);
+    box-shadow: -30px 18px rgb(0 0 0 / 2%);
     height: 70%;
     margin-right: 13%;
     margin-top: 8%;
@@ -106,7 +106,7 @@
   }
 }
 
-p {
+.cookbook p {
   color: #5e5b69;
   display: flex;
   font-family: var(--font-family-base);
