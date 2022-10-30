@@ -31,11 +31,6 @@
     max-height: 30px;
     max-width: var(--max-width);
     width: calc(100% - 2 * var(--offset));
-
-    .nav-link {
-      margin-top: 0;
-
-    }
   }
 
   .header-nav > .header-nav-ul {
@@ -78,6 +73,7 @@
     font-size: 60px;
     font-weight: 700;
     line-height: 60px;
+    margin-top: 0;
     text-decoration: none;
   }
 
@@ -133,7 +129,7 @@
   }
 
   header {
-    background-color: var(--newsletter-color);
+    background-color: var(--background-offwhite);
     display: block;
     height: 80px;
     position: fixed;

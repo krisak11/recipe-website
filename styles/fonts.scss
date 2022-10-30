@@ -52,3 +52,26 @@
     line-height: 32px;
   }
 }
+
+.latest-recipes-section {
+  p{
+    color:var(--warm-color);
+  }
+  h2{
+    color:var(--color-heading-soft);
+    strong{
+      color:var(--color-heading);
+    }
+  }
+}
+.video-section {
+  p{
+    color:var(--warm-color);
+  }
+  h2{
+    color:var(--color-heading-soft);
+    strong{
+      color:var(--color-heading);
+    }
+  }
+}
