@@ -4,7 +4,14 @@ button {
   height: 52px;
   text-decoration: none;
   width: 250px;
+
+  @media only screen and (max-width: 650px) {
+    height: 42px;
+    margin-top: 10%;
+    width: 191px;
+  }
 }
+
 
 a {
   color: var(--warm-color);
@@ -15,12 +22,6 @@ a {
   line-height: 24px;
   text-align: center;
   text-decoration: none;
-
-  @media only screen and (max-width: 650px) {
-    height: 42px;
-    margin-top: 10%;
-    width: 191px;
-  }
 }
 
 .index-button {
