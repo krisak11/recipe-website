@@ -128,18 +128,18 @@ h2 {
 @media (min-width: 900px) {
   .cards {
     display: grid;
-    grid-template-columns: repeat(var(--columns-offset), 1fr);
+    grid-template-columns: repeat(calc(var(--columns-offset) - 2), 1fr);
 
     .card:nth-child(3n + 1) {
-      grid-column: 2 / span 3;
+      grid-column: 1 / span 3;
     }
 
     .card:nth-child(3n + 2) {
-      grid-column: 5 / span 3;
+      grid-column: 4 / span 3;
     }
 
     .card:nth-child(3n) {
-      grid-column: 8 / span 3;
+      grid-column: 7 / span 3;
     }
   }
 }
@@ -151,7 +151,7 @@ h2 {
 }
 
 .latest-recipes-heading-home p {
-  grid-column: 2 / span 10;
+  grid-column: 1 / span 10;
   max-width: max-content;
 
   @media (min-width: 900px) {
@@ -160,7 +160,7 @@ h2 {
 }
 
 .latest-recipes-heading-home h2 {
-  grid-column: 2 / span 10;
+  grid-column: 1 / span 10;
   margin-bottom: 0%;
   max-width: max-content;
   min-width: max-content;
