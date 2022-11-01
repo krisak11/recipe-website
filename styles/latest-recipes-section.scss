@@ -21,6 +21,7 @@
 
   @media only screen and (min-width: 900px) {
     background-image: linear-gradient(0deg, var(--background-offwhite) 66%, var(--newsletter-color) 66%);
+
   }
 
   .button-container {
@@ -45,16 +46,53 @@
 }
 
 .latest-recipes-section .heading {
-  display: grid;
-  gap: var(--vertical-space);
-  grid-template-columns: repeat(var(--columns-offset), 1fr);
+  @media (max-width: 599px) {
+      display: grid;
+      grid-template-columns: repeat(var(--columns), 1fr);
+     // min-width: 250px;
+      gap: var(--gutter);
+  }
+  
+  @media (min-width: 600px) {
+    gap: var(--gutter);
+      display: grid;
+      grid-template-columns: repeat(var(--columns), 1fr);
+  }
+  @media (min-width: 900px) {
+    gap: var(--gutter);
+      display: grid;
+      grid-template-columns: repeat(calc(var(--columns-offset) - 2), 1fr);
+  }
 
   .content {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 6;
+    min-width: max-content;
+
+    @media (min-width: 370px) {
+      grid-column: 2 / span 4;
+    }
+
+    @media (min-width: 900px) {
+      grid-column: 1 / span 4;
+    }
   }
 
   .filters {
-    grid-column: 9;
+    min-width: 7rem;
+    max-width: 7rem;
+    grid-column: 8 / span 4;
+    justify-self: end;
+
+    @media (min-width: 600px) {
+      font-size: var(--font-base-body-px);
+      min-width: max-content;
+      max-width: none;
+    }
+
+    @media (min-width: 900px) {
+      font-size: calc(calc(22/16) * 1rem);
+      grid-column: 5 / span 5;
+    }
   }
 }
 
