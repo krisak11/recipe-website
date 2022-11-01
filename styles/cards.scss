@@ -129,6 +129,7 @@ h2 {
   .cards {
     gap: var(--vertical-space);
     grid-template-columns: repeat(var(--columns-offset), 1fr);
+    width: 100vw;
 
     .card:nth-child(3n + 1) {
       grid-column: 2 / span 3;
