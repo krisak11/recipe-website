@@ -128,33 +128,47 @@
   }
 
   .header-yum-a {
+    grid-column: 2 / span 6;
     margin-top: 0;
+    text-align: left;
   }
 
   header {
+    align-items: flex-end;
     background-color: var(--newsletter-color);
 
     /* nýtt */
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: var(--max-main-width);
+    flex-direction: row;
+    padding-top: calc(var(--spacing) * 2);
+
     //min-height:100vh;
     position: sticky;
     //height: 80px;
     //position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
+  }
+
+  .header-hero > header {
+    background-color: var(--background-offwhite);
+  }
+
+  .offwhite-header-desktop {
+    background-color: var(--background-offwhite);
   }
 
   header > .header-label {
-    display: flex;
-    justify-content: space-between;
-    margin: var(--vertical-space) 0;
-    max-width: var(--max-width);
-    width: calc(100% - 2 * var(--offset));
+    display: grid;
+    gap: var(--vertical-space);
+    grid-template-columns: repeat(var(--columns-offset), 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 100vw;
 
     .header-logo {
+      grid-column: 2 / span 6;
       height: 25px;
       max-width: 133px;
       width: 133px;
@@ -165,8 +179,9 @@
     }
 
     .header-nav {
-      display: grid;
-      flex-direction: right;
+      display: flex;
+      flex-direction: row;
+      grid-column: 9 / span 2;
     }
   }
 
@@ -182,7 +197,7 @@
 
   .header-label .header-nav-ul > li {
     flex-direction: column;
-    margin-left: var(--gutter);
+    // margin-left: var(--gutter);
     margin-right: var(--gutter);
   }
 
