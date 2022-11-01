@@ -4,54 +4,19 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  display: grid;
-  gap: var(--vertical-space);
-  grid-template-columns: repeat(var(--columns-offset), 1fr);
-  grid-template-rows: auto;
-  height: 700px;
   justify-content: center;
   margin: 0 auto;
   min-width: 100vw;
 
+
   @media screen and (max-width: 900px) {
     background-position: center;
     background-size: cover;
-    display: flex;
   }
 }
 
 .hero-text {
   color: var(--color-text);
-  grid-column: 2 / span 6;
-
-  h2 {
-    color: var(--color-heading);
-    font-family: var(--font-family-heading);
-
-    @media only screen and (max-width: 320px) {
-      font-size: 32px;
-      //line-height: 43px;
-      margin: 0 auto;
-      margin-bottom: 17px;
-    }
-
-    @media only screen and (min-width: 321px) {
-      font-size: 42px;
-      //line-height: 80px;
-      margin: 0 auto;
-    }
-
-    @media only screen and (min-width: 650px) {
-      font-size: 60px;
-      margin: 0;
-    }
-  }
-
-  p {
-    display: flex;
-    font-family: var(--font-family-base);
-    word-wrap: break-word;
-  }
 
   @media only screen and (max-width: 650px) {
     margin: 0 auto;
@@ -62,76 +27,90 @@
     justify-content: center;
     width: 550px;
   }
+}
 
-  .our-latest-recipe {
-    color: var(--warm-color);
-    font-weight: 500;
+.hero-text h2 {
+  color: var(--color-heading);
+  font-family: var(--font-family-heading);
 
-    @media only screen and (max-width: 650px) {
-      font-size: 12px;
-      font-weight: 500;
-      margin: 0 auto;
-    }
-
-    @media only screen and (min-width: 651px) {
-      font-size: 16px;
-      margin: 0;
-    }
+  @media only screen and (max-width: 320px) {
+    font-size: 32px;
+    margin: 0 auto;
+    margin-bottom: 17px;
   }
 
-  .pumkin-texti {
-    @media only screen and (max-width: 500px) {
-      display: none;
-    }
-
-    @media only screen and (min-width: 501px) {
-      color: var(--color-text);
-      font-size: 18px;
-      font-weight: 300;
-      height: 128px;
-      line-height: 32px;
-      margin: 2rem;
-      text-align: center;
-    }
-
-    @media only screen and (min-width: 650px) {
-      color: var(--color-text);
-      font-size: 18px;
-      font-weight: 300;
-      height: 128px;
-      line-height: 32px;
-      margin: 0;
-      text-align: inherit;
-    }
+  @media only screen and (min-width: 321px) {
+    font-size: 42px;
+    margin: 0 auto;
   }
 
-  .mobile-pumkintext {
-    @media only screen and (max-width: 650px) {
-      display: none;
-    }
+  @media only screen and (min-width: 650px) {
+    font-size: 60px;
+    margin: 0;
+  }
+}
 
-    @media only screen and (min-width: 651px) {
-      color: var(--color-text);
-      font-size: 18px;
-      font-weight: 300;
-      height: 128px;
-      line-height: 32px;
-      margin: 0;
-      text-align: inherit;
-    }
+.hero-text p {
+  display: flex;
+  font-family: var(--font-family-base);
+  word-wrap: break-word;
+}
+
+.hero-text .our-latest-recipe {
+  color: var(--warm-color);
+
+  @media only screen and (max-width: 650px) {
+    font-size: 12px;
+    margin: 0 auto;
   }
 
-  .mobile-pumkin {
-    @media only screen and (max-width: 650px) {
-      font-size: 15px;
-      line-height: 24px;
-      margin-bottom: 27px;
-      margin-left: 30px;
-    }
+  @media only screen and (min-width: 651px) {
+    font-size: 16px;
+    margin: 0;
+  }
+}
 
-    @media only screen and (min-width: 651px) {
-      display: none;
-    }
+.hero-text .pumkin-texti {
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+
+  @media only screen and (min-width: 501px) {
+    color: var(--color-text);
+    font-size: 18px;
+    height: 128px;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 650px) {
+    margin: 0;
+    text-align: inherit;
+  }
+}
+
+.hero-text .mobile-pumkintext {
+  @media only screen and (max-width: 650px) {
+    display: none;
+  }
+
+  @media only screen and (min-width: 651px) {
+    color: var(--color-text);
+    font-size: 18px;
+    height: 128px;
+    text-align: inherit;
+  }
+}
+
+.hero-text .mobile-pumkin {
+  @media only screen and (max-width: 650px) {
+    font-size: 15px;
+    margin-bottom: 27px;
+    margin-left: 30px;
+  }
+
+  @media only screen and (min-width: 651px) {
+    display: none;
   }
 }
 
