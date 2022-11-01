@@ -8,6 +8,7 @@
     "sass": "sass styles.scss styles.css",
     "sass-watch": "sass --watch styles.scss styles.css",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "build": "npm run sass",
     "lint": "stylelint styles.scss ./**/*.scss",
     "lint-css": "stylelint styles.css ./**/*.css"
   },
