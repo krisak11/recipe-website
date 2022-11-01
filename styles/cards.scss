@@ -4,9 +4,9 @@ h2 {
 
 .cards {
   display: grid;
-  gap: var(--gutter);
+  gap: var(--vertical-space);
+  grid-template-columns: repeat(var(--columns-offset), 1fr);
   grid-template-rows: auto;
-  max-width: 1300px;
 
   .card {
     background-color: var(--newsletter-color);
@@ -83,19 +83,19 @@ h2 {
 
 @media (max-width: 599px) {
   .cards {
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: calc(var(--vertical-space) / 2);
+    grid-template-columns: repeat(calc(var(--columns-offset) * 2), 1fr);
 
     .card {
-      grid-column: 2/ span 10;
+      grid-column: 2/ span 20;
     }
   }
 }
 
 @media (min-width: 600px) {
   .cards {
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: calc(var(--vertical-space) / 2);
+    grid-template-columns: repeat(calc(var(--columns-offset) * 2), 1fr);
 
     /*
     .card {
@@ -104,11 +104,11 @@ h2 {
     */
 
     .card:nth-child(2n-1) {
-      grid-column: 2 / span 5;
+      grid-column: 2 / span 10;
     }
 
     .card:nth-child(2n) {
-      grid-column: 7 / span 5;
+      grid-column: 12 / span 10;
     }
 
     .card p {
@@ -127,19 +127,19 @@ h2 {
 
 @media (min-width: 900px) {
   .cards {
-    display: grid;
-    grid-template-columns: repeat(calc(var(--columns-offset) - 2), 1fr);
+    gap: var(--vertical-space);
+    grid-template-columns: repeat(var(--columns-offset), 1fr);
 
     .card:nth-child(3n + 1) {
-      grid-column: 1 / span 3;
+      grid-column: 2 / span 3;
     }
 
     .card:nth-child(3n + 2) {
-      grid-column: 4 / span 3;
+      grid-column: 5 / span 3;
     }
 
     .card:nth-child(3n) {
-      grid-column: 7 / span 3;
+      grid-column: 8 / span 3;
     }
   }
 }
@@ -153,9 +153,14 @@ h2 {
 .latest-recipes-heading-home p {
   grid-column: 2 / span 9;
   max-width: max-content;
+  min-width: max-content;
 
   @media (min-width: 900px) {
     font-size: 1rem;
+  }
+
+  @media (min-width: 1600px) {
+    grid-column: 2/span 6;
   }
 }
 
@@ -167,5 +172,9 @@ h2 {
 
   @media (min-width: 900px) {
     font-size: calc(calc(40 / 16) * 1rem);
+  }
+
+  @media (min-width: 1600px) {
+    grid-column: 2/span 6;
   }
 }

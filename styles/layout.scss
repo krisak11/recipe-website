@@ -17,80 +17,71 @@ main {
   grid-template-rows: auto;
   justify-content: center;
   margin: 0 auto;
-  max-width: var(--max-main-width);
   //width: calc(100% - (2 * var(--offset)));
-  width: 100%;
+  width: 100vw;
 }
 
 .latest-recipes-heading-home {
-  //align-items: center;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: flex-end;
-
+  column-gap: calc(var(--vertical-space) / 2);
   display: grid;
-  gap: var(--vertical-space);
-  grid-template-columns: repeat(var(--columns-offset), 1fr);
+  grid-template-columns: repeat(calc(var(--columns-offset) * 2), 1fr);
 
   @media (min-width: 600px) {
     align-items: flex-start;
+  }
+
+  @media (min-width: 900px) {
+    column-gap: var(--vertical-space);
+    grid-template-columns: repeat(var(--columns-offset), 1fr);
   }
 }
 
 .i-m {
   display: grid;
-  gap: var(--vertical-space);
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
-  width: 100%;
 
-  @media only screen and (max-width: 1001px) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.ingredients {
-  @media only screen and (max-width: 1000px) {
-    margin: 0 auto;
-    margin-left: 7%;
-    margin-right: 7%;
+  @media (max-width: 599px) {
+    gap: calc(var(--vertical-space) / 2);
+    grid-template-columns: repeat(calc(var(--columns-offset) * 2), 1fr);
   }
 
-  @media only screen and (min-width: 1001px) {
-    grid-column: 2 / span 2;
-  }
-}
-
-.method {
-  @media only screen and (max-width: 1000px) {
-    margin: 0 auto;
-    margin-left: 7%;
-    margin-right: 7%;
+  @media (min-width: 600px) {
+    gap: calc(var(--vertical-space) / 2);
+    grid-template-columns: repeat(calc(var(--columns-offset) * 2), 1fr);
   }
 
-  @media only screen and (min-width: 1001px) {
-    grid-column: 5 / span 7;
+  @media (min-width: 900px) {
+    gap: var(--vertical-space);
+    grid-template-columns: repeat(var(--columns-offset), 1fr);
   }
 }
 
 .hero-section {
-  display: flex;
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: repeat(var(--columns-offset), 1fr);
+  grid-template-rows: auto;
   height: 700px;
-  max-width: var(--max-width);
+  max-width: var(--max-main-width);
   width: 100%;
 
   @media only screen and (max-width: 500px) {
     height: 500px;
   }
+
+  @media screen and (max-width: 900px) {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+  }
 }
 
-.hero-text {
+.hero-section .hero-text {
   display: flex;
   flex-direction: column;
+  grid-column: 2 / span 6;
 }
 
-.hero-info {
+.hero-section .hero-info {
   display: flex;
 
   @media only screen and (max-width: 500px) {
@@ -107,7 +98,7 @@ main {
   gap: var(--vertical-space);
   grid-template-columns: repeat(var(--columns-offset), 1fr);
   grid-template-rows: auto;
-  height: 110%;
+  height: 570px;
   max-width: var(--max-width);
   width: 100%;
 
@@ -132,7 +123,7 @@ main {
 .cookbook {
   display: flex;
   height: 110%;
-  width: 100%;
+  width: 100vw;
 }
 
 .cookbook-text {
