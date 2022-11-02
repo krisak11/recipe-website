@@ -12,6 +12,7 @@
 }
 
 .ingredients {
+  grid-column: 2 / span 20;
   width: 100%;
 
   h2 {
@@ -19,6 +20,10 @@
     font-family: var(--font-family-heading);
     font-size: 40px;
     line-height: 53px;
+  }
+
+  @media (min-width: 900px) {
+    grid-column: 2 / span 3;
   }
 }
 
@@ -49,6 +54,8 @@
 }
 
 .method {
+  grid-column: 2 / span 20;
+
   h2 {
     color: #d0d0d0;
     font-family: var(--font-family-heading);
@@ -60,6 +67,10 @@
   p {
     margin-bottom: var(--spacing);
     word-wrap: break-word;
+  }
+
+  @media (min-width: 900px) {
+    grid-column: 5 / span 6;
   }
 }
 
