@@ -99,12 +99,26 @@ main {
   grid-template-columns: repeat(var(--columns-offset), 1fr);
   grid-template-rows: auto;
   height: 570px;
-  max-width: var(--max-width);
+  min-width: 240px;
   width: 100%;
 
-  @media only screen and (max-width: 650px) {
+  @media (min-width: 1201px) {
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    padding: 5%;
+  }
+
+  @media (max-width: 650px) {
+    align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    justify-content: center;
   }
 }
 
